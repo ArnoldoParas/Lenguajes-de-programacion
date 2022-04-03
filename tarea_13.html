@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style_tareas.css">
+    <title>Tarea 13</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 13</h1>
+    </section>
+    <div class="main">
+        <div class="body">
+            <h2 class="t2_tarea_5">PHP</h2>
+            <h2 class="t1_tarea_5">Sintaxis del lenguaje de programación PHP</h2>
+            <h2 class="t3">Delimitadores</h2>
+            <div class="text">
+                <p>Para delimitar el código de PHP existen 4 opciones:</p><br><br>
+                <li>&#60? echo 'primer método de delimitador PHP'; ?></li><br>
+                <li>&#60?php echo 'segundo método de delimitador PHP'; ?></li><br>
+                <li>&#60script language="php"> <br>
+                    echo 'Algunos editores como el FrontPage entienden este método; <br>
+                    &#60/script&#62</li><br>
+                <li>&#60% echo 'Método de compatibilidad con ASP'; %></li><br><br>
+                <p><b>Nota:</b><br><br>La opción 1 y 4 no estarán disponibles, ya que se pueden activar o desactivar al compilar el interprete de PHP. De esta forma la opción más usada es la segunda.</p><br><br>
+            </div>
+            <h2 class="t3">Comentarios</h2>
+            <div class="text">
+                <p>Php soporta 3 tipos de comentarios:</p><br><br>
+                <li>/* Comentarios de varias líneas  */</li><br>
+                <li>// Comentraios de una sóla línea</li><br>
+                <li># Comenrios estilo Bash / Perl (Hasta el final de línea) </li><br><br>
+            </div>
+            <h2 class="t3">Varibales</h2>
+            <div class="text">
+                <p>
+                    En PHP las variables se representan con un signo dolar seguido por el nombre de la variable. 
+                    Éstas no necesitan ser deaclaradas antes de ser usadas, sino que tras la primera aparición en el código quedan declaradas.
+                    Además se debe tener en cuenta que las variables en PHP están débilmente tipadas, o sea que una variable se asocia a un contenido, del tipo que sea, estando el tipo indicado en el contenido, no en la variable en sí. <br><br>
+                    En PHP existen 2 formas de asignar variables: <br><br>
+                </p>
+                <li><b>Por valor :</b> Si yo asigno una variable a otra, y más tarde cambio alguna de las variables, la otra  no se me afecta.</li><br>
+                <li>
+                    <b>Por referencia :</b> (Es hacer un <b>alias</b> de una variable)Despues de hacer el alias, si yo cambio el contenido de una de las variables, la "otra" se me afecta.
+                    <br> Para colocar un alias coloco el símbolo '&' antes de la variable que voy a asignar, asi:
+                </li><br>
+                <p>$var1 = 34; &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       //var1 tiene 34</p><br>
+                <p>$var2 = &var1; &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp //var2 tiene 34 </p><br>
+                <p>$va1 = 27 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp         //Las 2 variables cambian a 27. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p><br>
+                <p><b>Nota :</b> Para eliminar una de estas variables, lo puedo hacer con <b>unset($var1)</b>, por ejemplo.</p>
+            </div>
+            <h2 class="t3">Tipo de variables</h2>
+            <div class="text">
+                <p>
+                    Como ya se había dicho, en PHP las variables toman el tipo de acuerdo a su contenido, por ejemplo: <br><br>
+                    $var = 'Esto es una cadena'  // Tipo String <br>
+                    $var = 3 Tipo entero <br><br>
+                    <b>Nota :</b> La suma obliga a que el tipo sea entero o doble según el operando, por ejemplo
+                </p>
+            </div>
+            <h2 class="t3">Nombres de las Variables</h2>
+            <p class="text">
+                En PHP podemos acceder al contenido de una variable cuyo nombre lo tenemos almacenado en otra variable diferente, por ejemplo: <br><br>
+
+                $a = 23;<br>
+                $b = 'a' ; <br>
+                echo $$b; //mostrará 123 <br>
+                echo $b; // mostrará a <br><br>
+            </p>
+            <h2 class="t3">Variables predefinidas</h2>
+            <p class="text">
+                Las variables dependen del servidor y su configuración. Estas variables están definidas por defecto al correr PHP como módulo Apache(En el manual de referencia encontrará información sobre esta forma de instalación).
+                Además si usted desea observar toda la configuración y las variables de acuerdo al servidor puede correr la función <b>phpinfo().</b> <br><br>
+
+                Las siguientes son algunas de las variables que son propias del Apache, y otras propias de PHP.
+                Para más información puede dirigirse al manual de referencia en donde encontrará documentadas muchas más variables. 
+            </p><br><br>
+            <h2 class="t3">PHP</h2>
+            <div class="text">
+                <li>
+                    $PHP_SELF : El nombre del archivo que contiene el script que se esta ejecutando, relativo al directorio raíz de los documentos. 
+                    Si PHP se está ejecutando como intérprete de línea de comandos, esta variable no está disponible.
+                </li><br>
+                <li>
+                    $HTTP_GET_VARS : Un array asociativo de variables pasadas al script actual mediante el método HTTP GET. Sólo está disponible si --variable tracking-- 
+                    ha sido activado mediante la directiva de configuración track_vars o la directiva <?php_track_vars?>.
+                </li><br>
+                <li>
+                    $HTTP_POST_VARS: Un array asociativo de variables pasadas al script actual mediante el método HTTP POST. Sólo está disponible si --variable tracking-- 
+                    ha sido activado mediante la directiva de configuración track_vars o la directiva <?php_track_vars?>.
+                </li><br>
+            </div>
+            <h2 class="t2">Estructura del lenguaje de programación PHP</h2>
+            <p class="text">Ejemplo</p><br><br>
+            <img src="img/tarea_13_img_1.png" alt="Imagen 1"><br><br>
+            <h2 class="t2">A que tipo de paradigma pertenece?</h2>
+            <p class="text">El lenguaje PHP es un ejemplo del paradigma de programación Multiparadigma</p>
+            <h2 class="t2">Aplicación a descargar para editar y ejecutar</h2>
+            <p class="text">
+                Se puede descargar el compilador oficial de PHP en el siguiente link: <a class="link" href="https://www.php.net/downloads.php">&nbspAqui</a>
+            </p><br><br>
+            <h2 class="t3">Ejemplo de programa</h2>
+            <h2 class="t3">Factorial de N</h2>
+            <div class="code">
+                <p>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &#60?php</p>
+                <p>2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $num1 = $_POST[<span class="code_3">" num1 "</span>] ;</p>
+                <p>3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp echo <span class="code_3">'El factorial del numero: '</span>. $num1 ;</p>
+                <p>4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">function</span> obtener_factorial($mi_fatorial) {</p>
+                <p>6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">if </span>($mi_fatorial == 1)</p>
+                <p>7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">return</span> 1;</p>
+                <p>8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">else</span></p>
+                <p>9 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="code_2">return</span> $mi_fatorial * obtener_factorial($mi_fatorial-1);</p>
+                <p>9 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</p>
+                <p>9 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ?></p>
+            </div>
+        </div>
+    </div>
+    <div class="hp">
+        <a href="tarea_12.html" class="back">Tarea 12</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_14.html" class="next">Tarea 14</a>
+    </div>
+</body>
+</html>

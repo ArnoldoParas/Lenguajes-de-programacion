@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style_tareas.css">
+    <title>Tarea 10</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 10</h1>
+    </section>
+    <div class="main">
+        <div class="body">
+            <h2 class="t2_tarea_5">Gödel</h2>
+            <h2 class="t1_tarea_5">Sintaxis del lenguaje de programación Gödel</h2>
+            <p class="text">
+                Un lenguaje en el que las sentencias lógicas llevan un orden y en el que existe el polimorfismo. Está basado en módulos (que aceptan polimorfismo) 
+                y en tipos de datos (soporta enteros y racionales con una precisión infinita, y número en coma flotante) y tiene una amplia librería de módulos predefinidos.
+            </p><br><br>
+            <h2 class="t2">Simbolos del lenguaje de programación Gödel</h2>
+            <div class="text">
+                <p>Algunos de los simbolos que encontramos en Gödel son:</p><br><br>
+                <li>¬</li><br>
+                <li></li><br>
+                <li>^</li><br>
+                <li>( )</li><br>
+                <li>S</li><br>
+                <li>0</li><br>
+                <li>=</li><br>
+                <li>.</li><br>
+                <li>+</li><br>
+            </div>
+            <h2 class="t2">A que tipo de paradigma pertenece?</h2>
+            <div class="text">
+                <p>El lenguaje Gödel es un ejemplo de paradigmas de programación como:</p><br><br>
+                <li>Paradigma Declarativo</li><br>
+                <li>Paradigma Lógica</li><br>
+            </div>
+            <h2 class="t2">Aplicación a descargar para editar y ejecutar</h2>
+            <p class="text">No se ha encontrado ningun compilador donde se pueda editar y ejecutar Gödel</p><br><br>
+            <h2 class="t3">Ejemplo de programa</h2>
+            <h2 class="t3">Divisor comun</h2>
+            <div class="code">
+                <p>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MODULE MCD.</p>
+                <p>2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp IMPORT Integers.</p>
+                <p>3</p>
+                <p>4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PREDICATE Mcd : Integer * Integer * Integer.</p>
+                <p>5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Mcd(i,&nbspj,&nbspd) <-</p>
+                <p>6</p>
+                <p>7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp DivisorComun(i,&nbspj,&nbspd) &</p>
+                <p>8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ~ SOME [e] (DivisorComun(i,&nbspj,&nbspe) & e > d).</p>
+                <p>9</p>
+                <p>10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PREDICATE DivisorComun : Integer * Integer * Integer.</p>
+                <p>11 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp DivisorComun(i,&nbspj,&nbspd) <-</p>
+                <p>12</p>
+                <p>13 &nbsp&nbsp&nbsp&nbsp <span class="code_2">IF</span> (i = 0 \/ j = 0)</p>
+                <p>14 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">THEN</span></p>
+                <p>15 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp d = <span class="example">Max&nbsp</span>(Abs(i),&nbspAbs(j))</p>
+                <p>16 &nbsp&nbsp&nbsp&nbsp <span class="code_2">ELSE</span></p>
+                <p>17 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1 =< d =< <span class="example">Min&nbsp</span>(Abs(i),&nbspAbs(j)) &</p>
+                <p>18</p>
+                <p>19 &nbsp&nbsp&nbsp&nbsp i Mod d = 0 &</p>
+                <p>20 &nbsp&nbsp&nbsp&nbsp j Mod d = 0.</p>
+            </div>
+        </div>
+    </div>
+    <div class="hp">
+        <a href="tarea_9.html" class="back">Tareas 9</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_11.html" class="next">Tareas 11</a>
+    </div>
+</body>
+</html>

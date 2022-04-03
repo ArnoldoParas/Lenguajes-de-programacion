@@ -1,0 +1,418 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(43, 43, 43);
+}
+
+.titulo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 172px;
+  margin: 125px 45.5% 0px;
+  padding: 0px 0px;
+}
+
+.titulo h1 {
+  color: #d5d5d5;
+  font-size: 50px;
+  min-width: 250px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  margin: 115px 30% 0px;
+}
+
+.t1 {
+  font-size: 28px;
+  color: #957b5f;
+}
+
+.text {
+  margin-top: 7%;
+  color: #d5d5d5;
+  font-size: 17px;
+}
+
+.t2 {
+  margin-top: 8%;
+  color: #957b5f;
+  font-size: 28px;
+}
+
+.descripcion {
+  padding-left: 6%;
+}
+
+.hp {
+  margin: 7% 3% 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hp a {
+  color: #d5d5d5;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.back {
+  flex: 33%;
+}
+
+.menu {
+  flex: 33%;
+  text-align: center;
+}
+
+.next {
+  flex: 33%;
+  text-align: right;
+}
+
+/*Fin tarea 1*/
+
+.text_t2 {
+  display: flex;
+  flex: 50%;
+  margin-top: 7%;
+  color: #d5d5d5;
+  font-size: 17px;
+}
+
+.txt_t2_1 {
+  padding-right: 15px;
+}
+
+.img_t2_1 {
+  padding: 10px;
+  flex: 50%;
+  width: 45%;
+}
+
+.text_t2_2 {
+  margin-top: 7%;
+  color: #d5d5d5;
+  font-size: 17px;
+}
+
+.t3 {
+  margin-top: 8%;
+  color: #957b5f;
+  font-size: 24px;
+}
+
+.text_t2_3 {
+  margin-top: 5%;
+  color: #d5d5d5;
+  font-size: 17px;
+}
+
+.img_t2_2 {
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 7%;
+}
+
+/*Fin tarea 2*/
+
+.text_t3_1 {
+  margin-top: 7%;
+  color: #d5d5d5;
+  font-size: 17px;
+}
+
+.img_t3_1 {
+  padding-top: 50px;
+  width: 500px;
+  margin-left: 19%;
+}
+
+.text_t3_2 ul li {
+  text-decoration: none;
+  margin-top: 5%;
+  color: #d5d5d5;
+  font-size: 17px;
+}
+
+.sp {
+  margin-top: 5%;
+  display: flex;
+}
+
+.s1 {
+  flex: 50%;
+}
+
+.s2 {
+  flex: 50%;
+}
+
+/*Fin tarea 3*/
+
+.t2_tarea_4 {
+  text-align: center;
+  margin-top: 10%;
+  color: #957b5f;
+  font-size: 28px;
+}
+
+.text_t4_2 ul li {
+  text-decoration: none;
+  margin-top: 5%;
+  margin-left: 20px;
+  color: #d5d5d5;
+  font-size: 17px;
+}
+
+/*Fin tarea 4*/
+/*
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu{
+    margin-top: 115px;
+    flex: 10%;
+    color: #d5d5d5;
+    height: 100px;
+    padding: 25% 0 0;
+
+}
+
+.menu li{
+    padding-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+*/
+
+.t2_tarea_5 {
+  text-align: center;
+  color: #957b5f;
+  font-size: 35px;
+}
+
+.t1_tarea_5 {
+  margin-top: 10%;
+  font-size: 28px;
+  color: #957b5f;
+}
+
+.example{
+    color: #FF9070;
+}
+
+.tabla_t5{
+    padding-left: 15%;
+}
+
+.link {
+  color: #d5d5d5;
+}
+
+.code {
+  /*
+      #FF9070 color naranja
+      #8A97C3 color medio azulado
+      #282C34 color obscuro VScode
+  */
+  color: #b0b7c3;
+  margin-top: 5%;
+  font-family: monospace sans-serif;
+  background-color: #24272e;
+}
+
+.code p {
+  padding-top: 5px;
+}
+
+/*Fin tarea 5*/
+
+.tabla{
+  width: 90%;
+}
+
+.tabla td{
+  padding-top: 10px;
+}
+
+.code_2{
+  color: #0077AA;
+}
+
+.code_3{
+  color: #7D9900;
+}
+
+/*Fin tarea 6*/
+
+.code_t7{
+  color: #24272e;
+  margin-top: 5%;
+  font-family: monospace sans-serif;
+  background-color: #808080;
+}
+
+/*Fin tarea 7*/
+
+/*Fin tarea 8*/
+
+.text li{
+  list-style-position: outside;
+}
+
+.img_t9{
+  margin-left: 76px;
+}
+
+.code_4{
+  color: #676E95;
+}
+
+/*Fin tarea 9*/
+
+.tabla_t10{
+  border-collapse: collapse;
+  border: 1px solid #d5d5d5;
+  width: 90%;
+}
+
+.tabla_t10 td{
+  border: 1px solid #d5d5d5;
+  text-align: center;
+  padding: 10px 0 10px;
+}
+
+/*Fin tarea 10*/
+
+/*Fin tarea 11*/
+
+/*Fin tarea 12*/
+
+/*Fin tarea 13*/
+
+/*Fin tarea 14*/
+
+.code_5{
+  color: #E6DB74;
+}
+
+.code_6{
+  color: #6A56E1;
+}
+
+.code_7{
+  color: #66D9EF;
+}
+
+.code_8{
+  color: #F92672;
+}
+
+/*Fin tarea 15*/
+
+.main_2{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 10% 0px;
+}
+
+.t4{
+  margin-top: 5%;
+  color: #957b5f;
+  font-size: 24px;
+  margin-left: 10%;
+}
+
+.t5{
+  margin-top: 8%;
+  color: #957b5f;
+  font-size: 28px;
+  text-align: center;
+}
+
+.problem{
+  margin-top: 5%;
+  color: #d5d5d5;
+  font-size: 17.5px;
+}
+
+.note{
+  list-style-type: number;
+  padding-left: 5%;
+}
+
+/*Fin tarea 16*/
+
+.code_t16 {
+  /*
+      #FF9070 color naranja
+      #8A97C3 color medio azulado
+      #282C34 color obscuro VScode
+  */
+  margin-left: 10%;
+  width: 80%;
+  color: #b0b7c3;
+  margin-top: 5%;
+  font-family: monospace sans-serif;
+  background-color: #24272e;
+}
+
+.code_t16 p {
+  padding-top: 5px;
+}
+
+.debug{
+  font-size:14px;
+}
+
+
+/*Fin tarea 17*/
+
+/*Fin tarea 18*/
+
+/*Fin tarea 19*/
+
+.matriz_objects{
+  color: #d5d5d5;
+  font-size: 17.5px;
+}
+
+.matriz{
+  margin-top: 30px;
+  width: 90%;
+  display: flex;
+}
+
+.matriz_v1{
+  flex: 1;
+}
+
+.matriz_v2{
+  padding-left: 200px;
+  flex: 2;
+}
+
+.tabla_t20{
+  border-collapse: collapse;
+  border: 1px solid #d5d5d5;
+  width: 80%;
+}
+
+.tabla_t20 td{
+  border: 1px solid #d5d5d5;
+  text-align: center;
+  padding: 10px 0 10px;
+}
+
+
+/*Fin tarea 20*/

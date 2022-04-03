@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style_tareas.css">
+    <title>Tarea 6</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 6</h1>
+    </section>
+    <div class="main">
+        <div class="body">
+            <h2 class="t2_tarea_5">Python</h2>
+            <h2 class="t1_tarea_5">Sintaxis del lenguaje de programación Python</h2>
+            <div class="text">
+                <p>
+                    A continuación veremos la sintaxis de Python, viendo como podemos empezar a usar el lenguaje creando nuestras primeras variables y 
+                    estructuras de control.<br><br>
+                    El termino sintaxis hace referencia al <b>conjunto de reglas que definen como se tiene que escribir el código en un determinado lenguaje 
+                    de programación.</b>  Es decir, hace referencia a la forma en la que debemos escribir las instrucciones para que el ordenador, 
+                    o más bien lenguaje de programación, nos entienda.<br><br>
+                    En la mayoría de lenguajes existe una sintaxis común, como por ejemplo el uso de = para asignar un dato a una variable, o el uso de {} 
+                    para designar bloques de código, pero Python tiene ciertas particularidades.<br><br>
+                    <b>La sintaxis es a la programación lo que la gramática es a los idiomas.</b> De la misma forma que la frase “Yo estamos aquí” no es correcta, 
+                    el siguiente código en Python no sería correcto, ya que no respeta las normas del lenguaje.<br><br>
+                </p>
+                <img src="img/tarea_6_img_1.png" alt="Imagen 1"><br><br>
+                <p>
+                    Lo veremos a continuación en detalle, pero Python no soporta el uso de $ ni hace falta terminar las líneas con ; como en otros lenguajes, 
+                    y tampoco hay que usar {} en estructuras de control como en el if.<br><br>
+                    Por otro lado, de la misma forma que un idioma no se habla son simplemente saber todas sus palabras, en la programación no basta con saber 
+                    la sintaxis de un lenguaje para programar correctamente en el. Es cierto que sabiendo la sintaxis podremos empezar a programar y a hacer 
+                    lo que queramos, pero <b>el uso de un lenguaje de programación va mucho más allá de la sintaxis.</b><br><br>
+                    Para empezar a perderle el miedo a la sintaxis de Python, vamos a ver un ejemplo donde vemos cadenas, operadores aritméticos y el uso del condicional if.<br><br>
+                    El siguiente código simplemente define tres valores a, b y c, realiza unas operaciones con ellos y muestra el resultado por pantalla.<br><br>
+                </p>
+                <img src="img/tarea_6_img_2.png" alt="Imagen 2"><br><br>
+                <p>
+                    Como puedes observar, la sintaxis de Python es muy parecida al lenguaje natural o pseudocódigo, lo que hace que sea relativamente fácil de leer. 
+                    Otra ventaja es que no necesitamos nada más, el código anterior puede ser ejecutado tal cual está. Si conoces otros lenguajes como C o Java, 
+                    esto te resultará cómodo, ya que no es necesario crear la típica función main().<br><br>
+                </p>
+            </div>
+            <h2 class="t3">Comentarios</h2>
+            <div class="text">
+                <p>
+                    Los comentarios son bloques de texto usados para <b>comentar</b> el código. Es decir, para ofrecer a otros programadores o a nuestro yo futuro información 
+                    relevante acerca del código que está escrito. A efectos prácticos, para Python es como si no existieran, ya que no son código propiamente dicho, 
+                    solo anotaciones.<br><br>Los comentarios se inician con # y todo lo que vaya después en la misma línea será considerado un comentario.<br><br>
+                </p>
+                <img src="img/tarea_6_img_3.png" alt="Imagen 3"><br><br>
+                <p>
+                    Al igual que en otros lenguajes de programación, podemos también comentar varias líneas de código. Para ello es necesario hacer uso de triples 
+                    comillas bien sean simples ''' o dobles """. Es necesario usarlas para abrir el bloque del comentario y para cerrarlo.<br><br>
+                </p>
+                <img src="img/tarea_6_img_4.png" alt="Imagen 4"><br><br>
+            </div>
+            <h2 class="t3">Identación y bloques de código</h2>
+            <div class="text">
+                <p>
+                    En Python los bloques de código se representan con identación, y aunque hay un poco de debate con respecto a usar tabulador o espacios, 
+                    la norma general es usar cuatro espacios.<br><br>
+                    En el siguiente código tenemos un condicional if. Justo después tenemos un print() identado con cuatro espacios. Por lo tanto, 
+                    todo lo que tenga esa identación pertenecerá al bloque del if.<br><br>
+                </p>
+                <img src="img/tarea_6_img_5.png" alt="Imagen 5"><br><br>
+                <p>
+                    Esto es muy importante ya que el código anterior y <b>el siguiente no son lo mismo.</b> De hecho el siguiente código daría un error ya que el if 
+                    no contiene ningún bloque de código, y eso es algo que no se puede hacer en Python.<br><br>
+                </p>
+                <img src="img/tarea_6_img_5.png" alt="Imagen 5"><br><br>
+                <p>
+                    Por otro lado, a diferencia de en otros lenguajes de programación, no es necesario utilizar ; para terminar cada línea.<br><br>
+                </p>
+                <img src="img/tarea_6_img_6.png" alt="Imagen 6"><br><br>
+                <p>
+                    Sin embargo <b>en Python no es necesario</b>, basta con un salto de línea.
+                </p><br><br>
+                <img src="img/tarea_6_img_7.png" alt="Imagen 7"><br><br>
+                <p>
+                    Pero se puede usar el punto y coma ; para tener dos sentencias en la misma línea.
+                </p><br><br>
+                <img src="img/tarea_6_img_8.png" alt="Imagen 8"><br><br>
+            </div>
+            <h2 class="t3">Multiples líneas</h2>
+            <div class="text">
+                <p>
+                    En algunas situaciones se puede dar el caso de que queramos tener una sola instrucción en varias línea de código. Uno de los motivos principales 
+                    podría ser que fuera <b>demasiado larga</b>, y de hecho en la especificación PEP8 se recomienda que las líneas <b>no excedan los 79 caracteres.</b><br><br>
+                    Haciendo uso de \ se puede <b>romper el código en varias líneas</b>, lo que en determinados casos hace que el código sea mucho más legible.
+                </p><br><br>
+                <img src="img/tarea_6_img_9.png" alt="Imagen 9"><br><br>
+                <p>
+                    Si por lo contrario estamos dentro de un bloque rodeado con paréntesis (), bastaría con saltar a la siguiente línea.<br><br>
+                </p>
+                <img src="img/tarea_6_img_10.png" alt="Imagen 10"><br><br>
+                <p>
+                    Se puede hacer lo mismo para llamadas a funciones
+                </p><br><br>
+                <img src="img/tarea_6_img_11.png" alt="Imagen 11"><br><br>
+            </div>
+            <h2 class="t3">Creando variebles</h2>
+            <div class="text">
+                <p>
+                    Anteriormente ya hemos visto como crear una variable y asignarle un valor con el uso de =. Existen también otras formas de hacerlo de una 
+                    manera un poco más sofisticada.<br><br>Podemos por ejemplo asignar el mismo valor a diferentes variables con el siguiente código.
+                </p><br><br>
+                <img src="img/tarea_6_img_12.png" alt="Imagen 12"><br><br>
+                <p>O también podemos asignar varios valores separados por coma.</p><br><br>
+                <img src="img/tarea_6_img_13.png" alt="Imagen 13"><br><br>
+            </div>
+            <h2 class="t3">Nombrando variables</h2>
+            <div class="text">
+                <p>
+                    Puedes nombrar a tus variables como quieras, pero es importante saber que las mayúsculas y minúsculas son importantes. 
+                    Las variables x y X son distintas.<br><br>Por otro lado existen ciertas normas a la hora de nombrar variables:<br><br>
+                </p>
+                <li>El nombre no puede empezar por un número</li><br>
+                <li>No se permite el uso de guiones -</li><br>
+                <li>Tampoco se permite el uso de espacios.</li><br>
+                <p>Se muestran unos ejemplos de nombres de variables válidos y no válidos.</p><br><br>
+                <img src="img/tarea_6_img_14.png" alt="Imagen 14"><br><br>
+                <p>
+                    Una última condición para nombrar a una variable en Python, es no usar nombres reservados para Python. Las palabras reservadas son 
+                    utilizadas por Python internamente, por lo que no podemos usarlas para nuestras variables o funciones.<br><br>
+                </p>
+                <img src="img/tarea_6_img_15.png" alt="Imagen 15"><br><br>
+                <p>De hecho con el siguiente comando puedes ver todas las palabras clave que no puedes usar.</p><br><br>
+                <img src="img/tarea_6_img_16.png" alt="Imagen 16"><br><br>
+            </div>
+            <h2 class="t3">Uso del paréntesis</h2>
+            <div class="text">
+                <p>
+                    Python soporta todos los operadores matemáticos más comunes, conocidos como operadores aritméticos. Por lo tanto podemos realizar sumas, 
+                    restas, multiplicaciones, exponentes (usando **) y otros que no vamos a explicar por ahora. En el siguiente ejemplo realizamos varias operaciones 
+                    en la misma línea, y almacenamos su resultado en y.<br><br>
+                </p>
+                <img src="img/tarea_6_img_17.png" alt="Imagen 17"><br><br>
+                <p>Pero el comportamiento del código anterior y el siguiente es distinto, ya que el uso de paréntesis () da prioridad a unas operaciones sobre otras.</p><br><br>
+                <img src="img/tarea_6_img_18.png" alt="Imagen 18"><br><br>
+                <p>
+                    El uso de paréntesis no solo se aplica a los operadores aritméticos, sino que también pueden ser aplicados a otros operadores como los relacionales 
+                    o de membresía que vemos en otros posts.
+                </p><br><br>
+            </div>
+            <h2 class="t3">Variable y alcance</h2>
+            <div class="text">
+                <p>
+                    Un concepto muy importante cuando definimos una variable, es saber <b>el alcance o scope que tiene.</b> En el siguiente ejemplo la variable con valor 10 
+                    tiene un alcance <b>global</b> y la que tiene el valor 5 dentro de la función, tiene un alcance <b>local.</b> Esto significa que cuando hacemos print(x), 
+                    estamos accediendo a la variable global x y no a la x definida dentro de la función.
+                </p><br><br>
+                <img src="img/tarea_6_img_19.png" alt="Imagen 19"><br><br>
+                <p>
+                    No te preocupes si no lo has entendido. Es un concepto un poco complicado de pillar al principio, pero lo veremos más adelante. 
+                    Te recomendamos leer los siguientes posts para entender mejor las funciones y el alcance de las variables:
+                </p><br><br>
+                <li>Funciones en Python y sus argumentos</li><br>
+                <li>Paso por valor y por referencia</li><br>
+                <li>Variable global en Python</li><br><br>
+            </div>
+            <h2 class="t3">Uso de la función Print()</h2> 
+            <div class="text">
+                <p>
+                    Por último, en cualquier lenguaje de programación es importante saber lo que va pasando a medida que se ejecutan las diferentes instrucciones. 
+                    Por ello, es interesante hacer uso de print() en diferentes secciones del código, ya que nos permiten ver el valor de las variables y diferente 
+                    información útil.<br><br>Existen muchas formas de usar la función print() y te las explicamos en detalle en este post, pero por ahora basta con 
+                    que sepas lo básico.<br><br>Como ya hemos visto se puede usar print() para imprimir por pantalla el texto que queramos.
+                </p><br><br>
+                <img src="img/tarea_6_img_20.png" alt="Imagen 20"><br><br>
+                <p>También es posible imprimir el contenido de una variable.</p><br><br>
+                <img src="img/tarea_6_img_21.png" alt="Imagen 21"><br><br>
+                <p>Y separando por comas , los valores, es posible imprimir el texto y el contenido de variables.</p><br><br>
+                <img src="img/tarea_6_img_22.png" alt="Imagen 22"><br><br>
+            </div>
+            <h2 class="t1_tarea_5">Simbolos del lenguaje de programación Python</h2>
+            <h2 class="t3">Operadores Aritméticos</h2>
+            <div class="text">
+                <p>Entre los operadores aritméticos que Python utiliza, podemos encontrar los siguientes:</p><br><br>
+                <table class="tabla">
+                    <tr><td>Símbolo</td><td>Significado</td><td>Ejemplo</td><td>Resultado</td></tr>
+                    <tr><td>+</td><td>Suma</td><td>a = 10 + 5</td><td>a es 15</td></tr>
+                    <tr><td>-</td><td>Resta</td><td>a = 12 - 7</td><td>a es 5</td></tr>
+                    <tr><td>-</td><td>Negación</td><td>a = -5</td><td>a es -5</td></tr>
+                    <tr><td>*</td><td>Multiplicación</td><td>a = 7 * 5</td><td>a es 35</td></tr>
+                    <tr><td>**</td><td>Exponente</td><td>a = 2 ** 3</td><td>a es 8</td></tr>
+                    <tr><td>/</td><td>División</td><td>a = 12.5 / 2</td><td>a es 6.25</td></tr>
+                    <tr><td>//</td><td>División entera</td><td>a = 12.5 / 2	</td><td>a es 6.0</td></tr>
+                    <tr><td>%</td><td>Módulo</td><td>a = 27 % 4</td><td>a es 3</td></tr>
+                </table>
+            </div>
+            <h2 class="t2">A que tipo de paradigma pertenece?</h2>
+            <div class="text">
+                <p>El lenguaje Python es un ejemplo de paradigmas de programación como:</p><br><br>
+                <li>Paradigma Orientado a objetos</li><br>
+                <li>Paradigma Imperativo</li><br>
+                <li>Paradigma Funcional</li><br>
+                <li>Paradigma Reflexivo</li><br>
+            </div>
+            <h2 class="t2">Aplicación a descargar para editar y ejecutar</h2>
+            <p class="text">
+                Se puede descargar el compilador oficial de Python en el siguiente link: <a class="link" href="https://www.python.org/downloads/">&nbspAqui</a><br><br>
+                Pero tambien puedes utilizar un editor de codigo como: Atom, VsCode, etc...
+            </p>
+            <h2 class="t3">Ejemplo de programa</h2>
+            <h2 class="t3">Factorial de N</h2>
+            <div class="code">
+                <p>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">def</span> <span class="example">&nbspfactorial&nbsp</span> (num)&nbsp: </p>
+                <p>2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp if&nbsp&nbspnum&nbsp&nbsp<&nbsp&nbsp0&nbsp: </p>
+                <p>3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_3">print&nbsp("Factorial of negative num does not exist")</span></p>
+                <p>4</p>
+                <p>5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">elif</span> &nbspnum &nbsp== &nbsp0&nbsp:</p>
+                <p>6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">return</span>&nbsp1</p>
+                <p>7</p>
+                <p>8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">else&nbsp:</span></p>
+                <p>9 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp fact = 1</p>
+                <p>10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">while</span>&nbsp(num &nbsp> &nbsp1)&nbsp:</p>
+                <p>11 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp fact &nbsp*= &nbspnum</p>
+                <p>12 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp num &nbsp-= &nbsp1</p>
+                <p>13 &nbsp&nbsp&nbsp&nbsp <span class="code_2">return</span> &nbspfact</p>
+                <p>14</p>
+                <p>15 &nbsp&nbsp&nbsp&nbsp num = 5;</p>
+                <p>16</p>
+                <p>17 &nbsp&nbsp&nbsp&nbsp <span class="code_2">print&nbsp</span>(<span class="code_3">"Factorial of"</span>,&nbspnum,<span class="code_3">&nbsp"is"</span>,&nbspfactorial(num))</p>
+            </div>
+        </div>
+    </div>
+    <div class="hp">
+        <a href="tarea_5.html" class="back">Tarea 5</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_7.html" class="next">Tarea 7</a>
+    </div>
+</body>
+</html>

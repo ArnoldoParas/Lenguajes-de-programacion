@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style_tareas.css">
+    <title>Tarea 17</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 17</h1>
+    </section>
+    <h2 class="t5">Conversion de monedas</h2>
+    <h2 class="t4">Problema</h2>
+    <div class="main_2">
+        <div class="problem">
+            <p>Elabore un programa en JAVA que a través de un Menú de opciones permita al usuario convertir de pesos a las siguientes monedas:</p><br>
+            <li class="note">Dólar</li><br>
+            <li class="note">Euro</li><br>
+            <li class="note">Yen(Japonés)</li><br>
+            <li class="note">Dólar de Hong Kong</li><br>
+            <p>Notas:</p><br>
+            <li>Las equivalencias deberán definirse dentro del programa.</li><br>
+            <li>Usar el cuadro de dialogo, showOptionDialog(), para seleccionar : Dólar, Euro, Yen, DolarHK</li><br><br>
+        </div>
+    </div><br><br><br>
+    <h2 class="t2_tarea_5">Java</h2>
+    <div class="code_t16">
+        <p>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #a78cee>package tareas;</font></p>
+        <p>2</p>
+        <p>3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #a78cee>import</font> <font color = #e06c6b>javax.swing.JOptionPane;</font></p>
+        <p>4</p>
+        <p>5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #3baac3>public</font> <font color = #a78cee>class</font> <font color =#3baac3>Conversion_grados</font> {</p>
+        <p class="debug">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #50567c>Run | Debug</font></p>
+        <p>6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #3baac3>public static</font> <font color = #dc6ab3>void</font> <font color = #5195e2>main</font>(<font color=#dc6ab3>String</font><font color = #3baac3>[ ]</font> <font color=#d8bf7f>args</font>){</p>
+        <p>7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color= #dc6ab3>int</font> x, z;</p>
+        <p>8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color= #dc6ab3>float</font> y = <font color=#ff9070> 0</font> ;</p>
+        <p>9 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#dc6ab3>String</font><font color = #3baac3>[ ]</font> options = { <font color= #89c363>"Dólar"</font>, <font color= #89c363>"Euro"</font>, <font color= #89c363>"Yen"</font>, <font color= #89c363>"DolarHK"</font> } ;</p>
+        <p>10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#dc6ab3>String</font><font color = #3baac3>[ ]</font> option_2 = { <font color= #89c363>"Si"</font>, <font color= #89c363>"No"</font> } ;</p>
+        <p>11</p>
+        <p>12 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>do{</font></p>
+        <p>13 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp y = Float.<font color = #5195e2>parseFloat</font>( JOptionPane.<font color = #5195e2>showInputDialog</font>( <font color= #89c363>"Ingrese la cantidad de Pesos"</font> ) ) ;</p>
+        <p>14</p>
+        <p>15 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp x = JOptionPane.<font color = #5195e2>showOptionDialog</font>(<font color=#cf68e1>null</font>, <font color= #89c363>"A que moneda quiere convertir?"</font>, <font color= #89c363>"Conversion de monedas"</font>, <font color=#ff9070> 0</font>,</p>
+        <p>16 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JOptionPane.<font color=#c2576b>YES_NO_CANCEL_OPTION</font>, <font color=#cf68e1>null</font>, options, options<font color = #3baac3>[</font><font color=#ff9070> 0 </font><font color = #3baac3>]</font>) ;</p>
+        <p>17</p>
+        <p>18 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>switch </font>(x){</p>
+        <p>19 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>case</font><font color=#ff9070> 0</font> :</p>
+        <p>20 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp y <font color = #3baac3>*=</font> <font color=#ff9070>0.050</font> ;</p>
+        <p>21 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JOptionPane.<font color = #5195e2>showMessageDialog</font>(<font color=#cf68e1>null</font>, y + <font color= #89c363>" Dolares Estadounidenses"</font> ) ;</p>
+        <p>22 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>break</font> ;</p>
+        <p>23 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>case</font><font color=#ff9070> 1</font> :</p>
+        <p>24 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp y <font color = #3baac3>*=</font> <font color=#ff9070>0.043</font> ;</p>
+        <p>25 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JOptionPane.<font color = #5195e2>showMessageDialog</font>(<font color=#cf68e1>null</font>, y + <font color= #89c363>" Euros"</font> ) ;</p>
+        <p>26 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>break</font> ;</p>
+        <p>27 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>case</font><font color=#ff9070> 2</font> :</p>
+        <p>28 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp y <font color = #3baac3>*=</font> <font color=#ff9070>5.65</font> ;</p>
+        <p>29 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JOptionPane.<font color = #5195e2>showMessageDialog</font>(<font color=#cf68e1>null</font>, y + <font color= #89c363>" Yenes"</font> ) ;</p>
+        <p>30 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>break</font> ;</p>
+        <p>31 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>case</font><font color=#ff9070> 3</font> :</p>
+        <p>32 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp y <font color = #3baac3>*=</font> <font color=#ff9070>0.39</font> ;</p>
+        <p>33 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JOptionPane.<font color = #5195e2>showMessageDialog</font>(<font color=#cf68e1>null</font>, y + <font color= #89c363>" Dolares HK"</font> ) ;</p>
+        <p>34 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>break</font> ;</p>
+        <p>35 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>default</font> :</p>
+        <p>36 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>break</font> ;</p>
+        <p>37 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</p>
+        <p>37 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp z = JOptionPane.<font color = #5195e2>showOptionDialog</font>(<font color=#cf68e1>null</font>, <font color= #89c363>"Desea continuar?"</font>, <font color= #89c363>"Continuar"</font>, <font color=#ff9070> 0</font>,</p>
+        <p>37 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JOptionPane.<font color=#c2576b>YES_NO_CANCEL_OPTION</font>, <font color=#cf68e1>null</font>, option_2, <font color=#cf68e1>null</font>) ;</p>
+        <p>37 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }<font color=#cf68e1>while</font> (z <font color=#cf68e1>==</font> <font color=#ff9070> 0</font>);</p>
+        <p>37 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</p>
+        <p>37 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</p>
+</div>
+    <div class="hp">
+        <a href="tarea_16.html" class="back">Tarea 16</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_18.html" class="next">Tarea 18</a>
+    </div>
+</body>
+</html>

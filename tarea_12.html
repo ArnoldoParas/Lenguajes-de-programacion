@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style_tareas.css">
+    <title>Tarea 12</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 12</h1>
+    </section>
+    <div class="main">
+        <div class="body">
+            <h2 class="t2_tarea_5">Ada</h2>
+            <h2 class="t1_tarea_5">Sintaxis del lenguaje de programación Ada</h2>
+            <p class="text">
+                La sintaxis, inspirada en Pascal, es bastante legible incluso para personas que no conozcan el lenguaje. Es un lenguaje que no escatima en la 
+                longitud de las palabras clave, en la filosofía de que un programa se escribe una vez, se modifica decenas de veces y se lee miles de veces 
+                (legibilidad es más importante que rapidez de escritura).
+            </p><br><br>
+            <h2 class="t2">Simbolos del lenguaje de programación ADA</h2>
+            <div class="text">
+                <p>El alfabeto de Ada consta de:</p><br><br>
+                <li>Letras mayúsculas: A, ..., Z y minúsculas: a, ..., z.</li><br>
+                <li>Dígitos: 0, ..., 9.</li><br>
+                <li>Caracteres especiales.</li><br><br>
+                <p>
+                    Es de destacar que en Ada 95 se admiten caracteres como 'Ñ', 'Ç' y vocales acentuadas ya que se permiten los 256 caracteres comprendidos en ISO Latin-1. <br><br>
+                    El alfabeto de minúsculas puede usarse en vez de o junto con el alfabeto de mayúsculas, pero se considera que los dos son idénticos (a excepción de las cadenas de caracteres y literales tipo carácter).
+                </p><br><br>
+            </div>
+            <h2 class="t3">Componentes léxicos</h2>
+            <div class="text">
+                <p>Se pueden encontrar en Ada los siguientes componentes léxicos:</p><br><br>
+                <li>Identificadores</li><br>
+                <li>Literales numéricos</li><br>
+                <li>Literales de tipo carácter</li><br>
+                <li>Cadenas de caracteres</li><br>
+                <li>Delimitadores</li><br>
+                <li>Comentarios</li><br>
+                <li>Palabras reservadas</li><br><br>
+                <p>
+                    Hacer constar, que el espacio no constituye nada más que un separador de elementos léxicos, pero es muy importante utilizarlos para una mayor 
+                    legibilidad, tanto dentro de las sentencias, como elemento de sangrado para ayudar a diferenciar los bloques. <br><br> Ejemplo:
+                </p><br><br>
+                <img src="img/tarea_12_img_1.png" alt="Imagen 1"><br><br>
+                <p>Esta línea contiene 5 elementos léxicos:</p><br><br>
+                <li>El identificador Temperatura_Sala</li><br>
+                <li>El delimitador compuesto :=</li><br>
+                <li>El número 25</li><br>
+                <li>El delimitador simple ;</li><br>
+                <li>El comentario -- Temperatura que debe tener la sala.</li><br><br>
+            </div>
+            <h2 class="t3">Identificadores</h2>
+            <div class="text">
+                <img src="img/tarea_12_img_2.png" alt="Imagen 2"><br><br>
+                <p>
+                    Aunque dentro de esta definición entrarían las palabras reservadas que tienen un significado propio en el lenguaje y, por tanto, no pueden ser utilizadas como identificadores. <br><br>
+
+                    Nota: en la versión Ada 95 se incorporan los caracteres de Latin-1, con lo que se pueden escribir identificadores como Año o Diámetro. <br><br>
+                    
+                    No hay límite en el número de caracteres de un identificador, aunque todo identificador deberá caber en una única línea. <br><br>
+                </p>
+            </div>
+            <h2 class="t3">Numeros</h2>
+            <div class="text">
+                <p>Los literales numéricos constan de:</p><br><br>
+                <li>dígitos 0 .. 9</li><br>
+                <li>el separador de decimales .</li><br>
+                <li>el símbolo de exponenciación e o E</li><br>
+                <li>el símbolo de negativo -</li><br>
+                <li>el separador _</li><br><br>
+                <p>
+                    Como ejemplo, el número real 98,4 se puede representar como: 9.84E1, 98.4e0, 984.0e-1 ó 0.984E+2. No estaría permitido 984e-1. <br><br>
+
+                    Para representación de número enteros, por ejemplo 1.900, se puede utilizar 19E2, 190e+1 ó 1_900E+0. Sirviendo el carácter _ como mero separador 
+                    para una mejor visualización. <br><br>
+
+                    Una última característica es la posibilidad de expresar un literal numérico en una base distinta de 10 encerrando el número entre caracteres #, 
+                    precedido por la base: un número entre 2 y 16. Por ejemplo, 2#101# equivale a 101 en base binaria, es decir, al número 5 en decimal. Otro ejemplo
+                    con exponente sería 16#B#E2 que es igual a 11 × 16² = 2.816 (nótese que es 16² y no 10² porque la base en este caso es 16). <br><br>
+                </p>
+            </div>
+            <h2 class="t3">Literales de tipo carácter</h2>
+            <div class="text">
+                <p>
+                    Contienen un único carácter, por ejemplo: A. Aquí sí se diferencian mayúsculas de minúsculas. Se delimitan por un apóstrofe. <br><br>
+                    Ejemplos: <br><br>
+                </p>
+                <img src="img/tarea_12_img_3.png" alt="Imagen 3"><br><br>
+            </div>
+            <h2 class="t3">Delimitadores</h2>
+            <div class="text">
+                <p>Los delimitadores pueden ser uno de los siguientes caracteres especiales:</p><br><br>
+                <img src="img/tarea_12_img_4.png" alt="Imagen 4"><br><br>
+                <p>O ser uno de los delimitadores compuestos por dos caracteres especiales:</p><br><br>
+                <img src="img/tarea_12_img_5.png" alt="Imagen 5"><br><br>
+            </div>
+            <h2 class="t3">Comentarios</h2>
+            <div class="text">
+                <p>
+                    Los comentarios se utilizan para ayudar a comprender los programas y lo constituye toda parte de texto precedida de dos guiones (--) 
+                    hasta el fin de línea. No existe la posibilidad de insertar otro elemento léxico en la misma línea a partir de los dos guiones, es decir, 
+                    el resto de la línea se interpreta como comentario en su totalidad.
+                </p><br><br>
+                <img src="img/tarea_12_img_6.png" alt="Imagen 6"><br><br>
+            </div>
+            <h2 class="t2">A que tipo de paradigma pertenece?</h2>
+            <div class="text">
+                <p>El lenguaje ADA es un ejemplo de paradigmas de programación como:</p><br><br>
+                <li>Paradigma Imperativo</li><br>
+                <li>Paradigma Orientada a objetos</li><br>
+            </div>
+            <h2 class="t2">Aplicación a descargar para editar y ejecutar</h2>
+            <p class="text">
+                Se puede descargar el compilador oficial de ADA en el siguiente link: <a class="link" href="https://www.adacore.com/download">&nbspAqui</a>
+            </p><br><br>
+            <h2 class="t3">Ejemplo de programa</h2>
+            <h2 class="t3">Factorial de N</h2>
+            <div class="code">
+                <p>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp procedure Calcular_Factorial (Num : in Natural; Fact : out Natural) is</p>
+                <p>2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_4">-- Aquí las variables locales</span></p>
+                <p>3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp begin</p>
+                <p>4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_4">-- Calcular factorial</span></p>
+                <p>5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Fact := 1;</p>
+                <p>6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp for I in 1 .. Num loop</p>
+                <p>7 &nbsp&nbsp&nbsp&nbsp Fact := Fact * I;</p>
+                <p>8 &nbsp&nbsp&nbsp&nbsp end loop;</p>
+                <p>9 &nbsp&nbsp&nbsp&nbsp end Calcular_Factorial;</p>
+            </div>
+        </div>
+    </div>
+    <div class="hp">
+        <a href="tarea_11.html" class="back">Tarea 11</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_13.html" class="next">Tarea 13</a>
+    </div>
+</body>
+</html>

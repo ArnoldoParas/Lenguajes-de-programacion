@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style_tareas.css">
+    <title>Tarea 8</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 8</h1>
+    </section>
+    <div class="main">
+        <div class="body">
+            <h2 class="t2_tarea_5">Haskell</h2>
+            <h2 class="t1_tarea_5">Sintaxis del lenguaje de programación Haskell</h2>
+            <div class="text">
+                <p>
+                    A diferencia de los operadores, las funciones se utilizan en notación prefija, es decir, el nombre de la función se coloca antes de sus parámetros. 
+                    Los nombres de las funciones sólo pueden contener caracteres normales, es decir, letras, dígitos, comillas y subrayados. 
+                    El primer carácter de un identificador de función no puede ser una letra mayúscula ni un dígito. <br><br>
+
+                    También es posible aplicar parcialmente una función, sin suministrarle todos sus parámetros. Esto genera una nueva función, que puede utilizarse 
+                    como otra función cualquiera. Esta facilidad es especialmente útil en presencia de orden superior.
+                </p><br><br>
+                <h2 class="t3">Funciones predefinidas</h2>
+                <p class="text">
+                    Haskell proporciona una amplia gama de funciones predefinidas. Algunas de las más significativas son las siguientes: <br><br>
+
+                    <b>Numéricas</b>: abs, negate, div, mod, round, floor, ceiling, sqrt, cos, sin, tan, acos, asin, atan, <br><br>
+                    <b>Ordinales</b>: succ, pred, fromEnum, toEnum <br><br>
+                    <b>Booleanas</b>: not <br><br>
+                    <b>Usando caracteres</b>: chr, ord, isDigit, isLower, isUpper, toLower, toUpper <br><br>
+                    <b>Sobre tuplas</b>: fst, snd <br><br>
+                    <b>Usando strings</b>: words, unwords, unlines, lines <br><br>
+                    <b>Usando listas</b>: concat, reverse, take, drop, splitAt, head, tail, last, init, length, zip, unzip, map, filter, zipWith, takeWhile, dropWhile, span, foldl, foldl1,foldr,foldr1, scanl, scanl1, scanr, scanr1 <br><br>
+                    <b>Sobre funciones</b>: flip <br><br><br>
+                    <b>Ejemplo de uso:</b><br><br>
+                    chr '0' <br>
+                    div 8 2 <br>
+                    fst (8,'a') <br>
+                    map ord "hola" <br>
+                </p>
+                <h2 class="t3">Conversión a notación infija:</h2>
+                <p class="text">
+                    Toda función binaria puede convertirse de forma que se utilice como un operador, es decir, con notación infija. Para ello debe escribirse el nombre 
+                    de la función entre acentos hacia la derecha. Las dos expresiones siguientes son equivalentes: <br><br>
+                    
+                    div 8 3 <br>
+                    8 `div` 3
+                </p><br><br>
+                <h2 class="t3">Errores típicos:</h2>
+                <div class="text">
+                    <li>
+                        Los parámetros de los operadores deben tener el tipo adecuado, y estar relacionados entre ellos de la forma que sea necesaria. 
+                        Por ejemplo, el operador + sirve para sumar tanto enteros como reales, pero ambos sumandos deben ser del mismo tipo. Por tanto, en cada 
+                        aplicación de +, ambos parámetros deben ser exactamente del mismo tipo: no pueden sumarse enteros con reales.
+                    </li><br>
+                    <li>
+                        Si se define un nuevo operador debe hacerse igual que si fuera una función, pero al definir su tipo siempre debe utilizarse en notación prefija, 
+                        es decir, entre paréntesis.
+                    </li>
+                </div>
+                <h2 class="t2">Simbolos del lenguaje de programación Haskell</h2>
+                <h2 class="t3">Valores y Tipos</h2>
+                <div class="text">
+                    <p>
+                        Puesto que Haskell es un lenguaje funcional puro, todos los cómputos vienen descritos a través de la evaluación de expresiones 
+                        (términos sintácticos) para producir valores (entidades abstractas que son vistas como respuestas). Todo valor tiene asociado un tipo. 
+                        (Intuitivamente, podemos pensar que los tipos son conjuntos de valores.) Ejemplos de expresiones son los valores atómicos tales como el entero 5,
+                        o el carácter 'a', o la función \x -> x+1, y los valores estructurados como la lista [1,2,3] y el par ('b',4). <br><br>
+                        Ya que las expresiones denotan valores, las expresiones de tipo son términos sintácticos que denotan tipos. Ejemplos de expresiones de tipo son 
+                        los tipos atómicos Integer (enteros con precisión ilimitada), Char (caracteres), Integer->Integer (funciones que aplican Integer sobre Integer), 
+                        así como los tipos estructurados [Integer] (lista homogénea de enteros) y (Char,Integer) (par formado por un carácter y un entero). <br><br>
+                        Todos los valores de Haskell son de primera categoría ("first-class") ---pueden ser argumentos o resultados de funciones, o pueden ser ubicados 
+                        en estructuras de datos, etc. Por otro lado, los tipos de Haskell no son de primera categoría. En cierto sentido, los tipos describen valores, 
+                        y la asociación de un valor con su tipo se llama un tipificado (typing). Usando los ejemplos anteriores, podemos escribir "tipificaciones" 
+                        como los siguientes: <br><br>
+                        5  :: Integer <br>
+                        'a' :: Char <br>
+                        inc :: Integer -> Integer <br>
+                        [1,2,3] :: [Integer] <br> 
+                        ('b',4) :: (Char,Integer) <br><br>
+                        El símbolo "::" puede leerse "tiene el tipo". <br><br>
+                    </p>
+                </div>
+                <h2 class="t2">A que tipo de paradigma pertenece?</h2>
+                <div class="text">
+                    <p>El lenguaje Haskell es un ejemplo de paradigmas de programación como:</p><br><br>
+                    <li>Paradigma no estricto</li><br>
+                    <li>Paradigma Modular</li><br>
+                    <li>Paradigma Funcional</li><br>
+                    <li>Paradigma fuertemente tipificado</li><br>
+                </div>
+                <h2 class="t2">Aplicación a descargar para editar y ejecutar</h2>
+                <p class="text">
+                    Se puede descargar el compilador oficial de Haskell en el siguiente link: <a class="link" href="https://www.haskell.org/platform/">&nbspAqui</a><br><br>
+                <h2 class="t3">Ejemplo de programa</h2>
+                <h2 class="t3">Factorial de N</h2>
+                <div class="code">
+                    <p>
+                        <p>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">fact</span>&nbsp::&nbsp<span class="example">Int</span>&nbsp->&nbsp<span class="example">Int</span></p>
+                        <p>2</p>
+                        <p>3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">fact</span>&nbsp 0&nbsp=&nbsp1</p>
+                        <p>4</p>
+                        <p>5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">fact&nbsp</span>n&nbsp=&nbspn&nbsp*&nbsp<span class="code_2">fact&nbsp</span>&nbsp(n&nbsp-&nbsp1)</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hp">
+        <a href="tarea_7.html" class="back">Tarea 7</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_9.html" class="next">Tarea 9</a>
+    </div>
+</body>
+</html>

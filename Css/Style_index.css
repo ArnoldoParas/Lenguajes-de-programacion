@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #161616;
+}
+
+/*Style del menu lateral de navegacion*/
+
+.btn{
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: #2c2e2f;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+
+.btn.click{
+  left: 310px;
+}
+
+.btn span{
+  color: white;
+  font-size: 28px;
+  line-height: 45px;
+}
+
+.btn.click span:before{
+  content: '\f00d';
+}
+
+.sidebar{
+  z-index: 9999;
+  overflow-y: scroll;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  left: -300px;
+  background: #979898;
+  transition: left 0.4s ease;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar.show{
+  left: 0px;
+}
+
+.sidebar .text{
+  color: #979898;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px; 
+  text-align: center;
+  background: #2c2e2f;
+  letter-spacing: 1px;
+}
+
+.side-b nav ul{
+  background: #2c2e2f;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+.side-b nav ul li{
+  line-height: 60px;
+  border-bottom: 1px solid #979898;
+}
+
+.side-b nav ul li a{
+  position: relative;
+  color: #979898;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 4px solid transparent;
+}
+
+.side-b nav ul li.active a{
+  color: #2c2e2f;
+  background: #979898;
+  border-left-color: #2c2e2f;
+}
+
+.side-b nav ul ul{
+  position: static;
+  display: none;
+}
+
+.side-b nav ul .tar-show.show{
+  display: block;
+}
+
+.side-b nav ul .per-show.show1{
+  display: block;
+}
+.side-b nav ul ul li{
+  line-height: 42px;
+  border-bottom: none;
+}
+
+.side-b nav ul ul li a{
+  font-size: 17px;
+  color: #979898;
+  padding-left: 70px;
+}
+
+.side-b nav ul li.active ul li a{
+  color: #2c2e2f;
+  background: #919191;
+  border-left-color: #2c2e2f;
+}
+
+.side-b nav ul li ul li a:hover{
+  background: #838383!important;
+}
+
+.side-b nav ul li a span{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+
+.side-b nav ul li a span.rotate{
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+/*Style de la presentacion del index*/
+
+
+.main_index{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #edf1fd;
+  background-image: url(../img/Index_personal_photo.png);
+  background-repeat: no-repeat;
+  background-size: 1330px;
+  background-position: right bottom;
+}
+
+.name{
+  font-family: Calibri;
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-20%,-50%);
+}
+
+.name p:nth-child(1),
+.name .detalles{
+  color: #6c707c;
+  font-size: 18px;
+}
+
+.name h1{
+  font-family: Poppins;
+  font-size: 40px;
+  margin: 0px;
+  letter-spacing: 3px;
+  color: #292929;
+}
+
+.menus{
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-btn{
+  font-size: 17px;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 20px;
+  width: 200px;
+  height: 45px;
+  background-color: #292929;
+  color: #ffffff;
+}
+
+.cv-btn:hover{
+  background-color: #131313;
+  transition: all ease 0.5s;
+}
+
+.cv-btn_2{
+  margin-left: 40px;
+  font-size: 17px;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 20px;
+  width: 200px;
+  height: 45px;
+  background-color: #292929;
+  color: #ffffff;
+}
+
+.cv-btn_2:hover{
+  background-color: #131313;
+  transition: all ease 0.5s;
+}

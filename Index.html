@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Css/Style_index.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <title>Portafolio de evidencias</title>
+</head>
+  <body>
+  <div class="btn">
+    <span class="fas fa-bars"></span>
+  </div>
+  <!--Side bar navigation-->
+  <div class="side-b">
+    <nav class="sidebar">
+      <div class="text">Inicio</div>
+      <!--Elementos de la lista de navegacion-->
+      <ul>
+        <li>
+          <a href="#" class="tar-btn">Menu de tareas<span class="fas fa-caret-down first"></span></a>
+          <!--Sub elementos del menu-->
+          <ul class="tar-show">
+            <li><a href="tarea_1.html">Tarea 1</a></li>
+            <li><a href="tarea_2.html">Tarea 2</a></li>
+            <li><a href="tarea_3.html">Tarea 3</a></li>
+            <li><a href="tarea_4.html">Tarea 4</a></li>
+            <li><a href="tarea_5.html">Tarea 5</a></li>
+            <li><a href="tarea_6.html">Tarea 6</a></li>
+            <li><a href="tarea_7.html">Tarea 7</a></li>
+            <li><a href="tarea_8.html">Tarea 8</a></li>
+            <li><a href="tarea_9.html">Tarea 9</a></li>
+            <li><a href="tarea_10.html">Tarea 10</a></li>
+            <li><a href="tarea_11.html">Tarea 11</a></li>
+            <li><a href="tarea_12.html">Tarea 12</a></li>
+            <li><a href="tarea_13.html">Tarea 13</a></li>
+            <li><a href="tarea_14.html">Tarea 14</a></li>
+            <li><a href="tarea_15.html">Tarea 15</a></li>
+            <li><a href="tarea_16.html">Tarea 16</a></li>
+            <li><a href="tarea_17.html">Tarea 17</a></li>
+            <li><a href="tarea_18.html">Tarea 18</a></li>
+            <li><a href="tarea_19.html">Tarea 19</a></li>
+            <li><a href="tarea_20.html">Tarea 20</a></li>
+            <li><a href="tarea_21.html">Tarea 21</a></li>
+            <li><a href="tarea_22.html">Tarea 22</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="per-btn">Personales<span class="fas fa-caret-down second"></span></a>
+          <!--Sub elemento del menu-->
+          <ul class="per-show">
+            <li><a href="minibibliografia.html">Minibibliografia</a></li>
+            <li><a href="Pasatiempo.html">Pasatiempos</a></li>
+            <li><a href="Personaje.html">Personaje</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!--motor del navegador-->
+  <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+    $('.tar-btn').click(function(){
+      $('.side-b nav ul .tar-show').toggleClass("show");
+      $('.side-b nav ul .first').toggleClass("rotate");
+    });
+    $('.per-btn').click(function(){
+      $('.side-b nav ul .per-show').toggleClass("show1");
+      $('.side-b nav ul .second').toggleClass("rotate");
+    });
+  $('.side-b nav ul li').click(function(){
+    $(this).addClass("active").siblings().removeClass("active")
+  });
+  </script>
+  <!--main-------------------------------------------->
+  <div class="main_index">
+    <div class="name">
+        <p>PIA</p>
+        <h1>Lenguajes de <font color="#17d1ac">Programación</font></h1>
+        <p class="detalles">
+            Alumno: Arnoldo Arturo Paras Reyes <br>
+            Matricula: 1868062 <br>
+            Hora: N2 <br>
+            Agosto - Diciembre 2021 <br>
+            Maestro: Ing. Ismael Gutiérrez Pimentel
+        </p>
+        <div class="menus">
+          <a href="menu_tareas.html" class="cv-btn">Menu tareas</a>
+          <a href="menu_personales.html" class="cv-btn_2">Menu personales</a>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

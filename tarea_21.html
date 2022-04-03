@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style_tareas.css">
+    <title>Tarea 21</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 21</h1>
+    </section>
+    <h2 class="t5">Suma de matrices</h2>
+    <h2 class="t4">Problema</h2>
+    <div class="main_2">
+        <div class="problem">
+            <p>
+                Elaborar un programa en JAVA que calcule la suma de dos matrices que ingrese el usuario. (nota: Validar lo que sea necesario para poder realizar la suma de
+                matrices)
+            </div>
+        </div>
+    </p><br><br><br>
+    <h2 class="t2_tarea_5">Java</h2>
+    <div class="code_t16">
+        <p>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #a78cee>package tareas;</font></p>
+        <p>2</p>
+        <p>3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #a78cee>import</font> <font color = #e06c6b>javax.swing.JOptionPane;</font></p>
+        <p>4</p>
+        <p>5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #3baac3>public</font> <font color = #a78cee>class</font> <font color =#3baac3>Suma_de_matrices</font> {</p>
+        <p class="debug">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #50567c>Run | Debug</font></p>
+        <p>6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #3baac3>public static</font> <font color = #dc6ab3>void</font> <font color = #5195e2>main</font>(<font color=#dc6ab3>String</font><font color = #3baac3>[ ]</font> <font color=#d8bf7f>args</font>){</p>
+        <p>7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #dc6ab3>Scanner</font> scn = <font color=#cf68e1>null</font> ;</p>
+        <p>8</p>
+        <p>9 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>try</font> {</p>
+        <p>10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  scn = <font color = #a78cee>new</font> <font color = #5195e2>Scanner</font>(System.<font color = #e06c6b>in</font>);</p>
+        <p>11</p>
+        <p>12 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color= #dc6ab3>int</font> matriz_1[ ] [ ], matriz_2[ ] [ ], matriz_3[ ] [ ], n, i, j ;</p>
+        <p>13</p>
+        <p>14 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>print</font> ( <font color= #89c363>"Ingrese el tamaño de las matrices: "</font> ) ;</p>
+        <p>15 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp n = scn.<font color = #5195e2>nextInt</font>( ) ;</</p>
+        <p>16</p>
+        <p>17 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp matriz_1 =  <font color = #a78cee>new</font> <font color= #dc6ab3>int</font> [n] [n] ;</</p>
+        <p>18 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp matriz_2 =  <font color = #a78cee>new</font> <font color= #dc6ab3>int</font> [n] [n] ;</</p>
+        <p>19 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp matriz_3 =  <font color = #a78cee>new</font> <font color= #dc6ab3>int</font> [n] [n] ;</</p>
+        <p>20</p>
+        <p>21 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #50567c>//Registro de primera matriz</font></</p>
+        <p>22 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>print</font> ( \n<font color= #89c363>"Ingrese los numeros de la primera matriz"</font>\n ) ;</</p>
+        <p>23 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>print</font> ( <font color= #89c363>"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfila &nbsp columna"</font> ) ;</</p>
+        <p>24 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>for</font> ( i = <font color=#ff9070>0</font>; i <font color=#cf68e1><</font> n; i<font color = #3baac3>++</font> ) {</</p>
+        <p>25 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>for</font> ( j = <font color=#ff9070>0</font>; j <font color=#cf68e1><</font> n; j<font color = #3baac3>++</font> ) {</</p>
+        <p>26 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>print</font> ( <font color= #89c363>"Matriz ["</font><font color = #3baac3>+</font>( i + <font color=#ff9070>1</font> )<font color = #3baac3>+</font><font color= #89c363>"]&nbsp&nbsp&nbsp&nbsp["</font><font color = #3baac3>+</font>( j + <font color=#ff9070>1</font>)<font color = #3baac3>+</font><font color= #89c363>"]: "</font> )) ;</</p>
+        <p>27 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp matriz_1 [ i ] [ j ] = scn.<font color = #5195e2>nextInt</font>( ) ;</</p>
+        <p>28 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</</p>
+        <p>29 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</</p>
+        <p>30</p>
+        <p>31 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #50567c>//Registro de la segunda matriz</font></</p>
+        <p>32 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>print</font> ( \n<font color= #89c363>"Ingrese los numeros de la segunda matriz"</font>\n ) ;</</p>
+        <p>33 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>print</font> ( <font color= #89c363>"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfila &nbsp columna"</font> ) ;</</p>
+        <p>34 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>for</font> ( i = <font color=#ff9070>0</font>; i <font color=#cf68e1><</font> n; i<font color = #3baac3>++</font> ) {</</p>
+        <p>35 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>for</font> ( j = <font color=#ff9070>0</font>; j <font color=#cf68e1><</font> n; j<font color = #3baac3>++</font> ) {</</p>
+        <p>36 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>print</font> ( <font color= #89c363>"Matriz ["</font><font color = #3baac3>+</font>( i + <font color=#ff9070>1</font> )<font color = #3baac3>+</font><font color= #89c363>"]&nbsp&nbsp&nbsp&nbsp["</font><font color = #3baac3>+</font>( j + <font color=#ff9070>1</font>)<font color = #3baac3>+</font><font color= #89c363>"]: "</font> )) ;</</p>
+        <p>37 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp matriz_2 [ i ] [ j ] = scn.<font color = #5195e2>nextInt</font>( ) ;</</p>
+        <p>38 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</</p>
+        <p>39 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</</p>
+        <p>40</p>
+        <p>41 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #50567c>//Suma de las matrices</font></</p>
+        <p>42 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>print</font> ( \n<font color= #89c363>"Suma de matrices"</font>\n ) ;</</p>
+        <p>43 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>for</font> ( i = <font color=#ff9070>0</font>; i <font color=#cf68e1><</font> n; i<font color = #3baac3>++</font> ) {</</p>
+        <p>44 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>for</font> ( j = <font color=#ff9070>0</font>; j <font color=#cf68e1><</font> n; j<font color = #3baac3>++</font> ) {</</p>
+        <p>45 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp matriz_3 <font color = #3baac3>[</font> i <font color = #3baac3>]</font> <font color = #3baac3>[</font> j <font color = #3baac3>]</font> = matriz_1 <font color = #3baac3>[</font> i <font color = #3baac3>]</font> <font color = #3baac3>[</font> j <font color = #3baac3>]</font> <font color = #3baac3>+</font> matriz_2 <font color = #3baac3>[</font> i <font color = #3baac3>]</font> <font color = #3baac3>[</font> j <font color = #3baac3>]</font> ;</</p>
+        <p>46 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>print</font> ( matriz_1 <font color = #f1d71b>[</font> i <font color = #f1d71b>]</font> <font color = #f1d71b>[</font> j <font color = #f1d71b>]</font> <font color = #3baac3>+</font> <font color= #89c363>"+"</font> </font> <font color = #3baac3>+</font> matriz_2 <font color = #f1d71b>[</font> i <font color = #f1d71b>]</font> <font color = #f1d71b>[</font> j <font color = #f1d71b>]</font> <font color = #3baac3>+</font> <font color= #89c363>"="</font> <font color = #3baac3>+</font> matriz_3 <font color = #f1d71b>[</font> i <font color = #f1d71b>]</font> <font color = #f1d71b>[</font> j <font color = #f1d71b>]</font> <font color = #3baac3>+</font> <font color= #89c363>"&nbsp&nbsp&nbsp&nbsp"</font> ) ;</</p>
+        <p>47 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</</p>
+        <p>48 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>println</font> ( <font color= #89c363>" "</font> ) ;</</p>
+        <p>49 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</</p>
+        <p>50</p>
+        <p>51 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #50567c>//Imprimir el resultado</font></</p>
+        <p>52 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>print</font> ( \n<font color= #89c363>"La suma de las matrices es:"</font> ) ;</</p>
+        <p>53 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>for</font> ( i = <font color=#ff9070>0</font>; i <font color=#cf68e1><</font> n; i<font color = #3baac3>++</font> ) {</</p>
+        <p>54 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>for</font> ( j = <font color=#ff9070>0</font>; j <font color=#cf68e1><</font> n; j<font color = #3baac3>++</font> ) {</</p>
+        <p>55 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>print</font> ( matriz_3 <font color = #f1d71b>[</font> i <font color = #f1d71b>]</font> <font color = #f1d71b>[</font> j <font color = #f1d71b>]</font> <font color = #3baac3>+</font> <font color= #89c363>"&nbsp&nbsp&nbsp&nbsp"</font> ) ;</</p>
+        <p>56 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</</p>
+        <p>57 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp System.<font color = #e06c6b>out</font>.<font color = #5195e2>println</font> ( <font color= #89c363>" "</font> ) ;</</p>
+        <p>58 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</</p>
+        <p>59 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }<font color=#cf68e1>finally</font> {</</p>
+        <p>60 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>if</font> (scn <font color=#cf68e1>!= null</font>){</p>
+        <p>61 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp scn.<font color = #5195e2>close</font> ( );</p>
+        <p>62 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp {</p>
+        <p>63 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</p>
+        <p>64 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</p>
+        <p>65 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</p>
+    </div>
+    <div class="hp">
+        <a href="tarea_20.html" class="back">Tarea 20</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_22.html" class="next">Tarea 22</a>
+    </div>
+</body>
+</html>

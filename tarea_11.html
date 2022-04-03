@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style_tareas.css">
+    <title>Tarea 11</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 11</h1>
+    </section>
+    <div class="main">
+        <div class="body">
+            <h2 class="t2_tarea_5">Cobol</h2>
+            <h2 class="t1_tarea_5">Sintaxis del lenguaje de programación Cobol</h2>
+            <div class="text">
+                <p>Un program COBOL está compuesto de 4 divisiones bien diferenciadas, que son:</p><br>
+                <li><b>Identification Division (Identificación):</b> Contiene información del programa, el autor, nombre del programa, fecha de creación, comentarios, etc.</li><br>
+                <li><b>Environment Division (Ambiente):</b> Describe las características que debe tener el ordenador para poder ejecutar el programa, los dispositivos de Entrada / Salida, el compilador, etc.</li><br>
+                <li><b>Data Division (Información):</b> Incluye los nombres de las variables, las características de las variables, el contenido que van a tener, sus nombres, etc.</li><br>
+                <li><b>Procedure Division (Procedimiento):</b> Describe las órdenes y operaciones que se van a realizar y el orden de las mismas.</li><br><br>
+            </div>
+            <h2 class="t3">Tipos de datos</h2>
+            <div class="text">
+                <p>División de Información se utiliza para definir las variables utilizadas en el programa. Para describir los datos en COBOL, uno debe comprender los siguientes términos: <br><br></p>
+                <li>Nombre de datos</li><br>
+                <li>Número de Nivel</li><br>
+                <li>Cláusula Imagen</li><br>
+                <li>Cláusula de Valor</li><br><br>
+                <img src="img/tarea_11_img_1.png" alt="Imagen 1"><br><br>
+            </div>
+            <h2 class="t3">Nombre de datos</h2>
+            <p class="text">
+                Nombres de datos debe estar definido en la División de Información antes de utilizarlas en la Division de Procedure. Deben tener un nombre definido por el usuario; palabras reservadas no 
+                se pueden utilizar. Nombres de datos da referencia a los lugares de memoria donde se almacenan los datos reales. Pueden ser primarias o tipo de grupo.El ejemplo siguiente muestra los datos 
+                válidos y no válidos los nombres:
+            </p><br><br>
+            <img src="img/tarea_11_img_2.png" alt="Imagen 2"><br><br>
+            <h2 class="t3">Número de Nivel</h2>
+            <div class="text">
+                <p>
+                    Número de nivel se utiliza para especificar el nivel de datos en un registro. Que se utilizan para diferenciar los elementos elementales y elementos de grupo. Elementos elementales 
+                    pueden agruparse para crear elementos de grupo.
+                </p><br><br>
+                <li><b>Elementos elementales</b> no puede dividirse. Número de nivel, los datos nombre, foto y cláusula cláusula de valor (opcional) se utiliza para describir un tema elemental.</li><br>
+                <li><b>Grupo los elementos</b> constan de uno o más elementos elementales. Número de nivel, nombre de los datos, y cláusula de valor (opcional) que se utilizan para describir un elemento de grupo. Grupo número de nivel es siempre 01.</li><br><br>
+                <p>El ejemplo siguiente muestra Grupo elemental y los elementos:</p><br><br>
+                <img src="img/tarea_11_img_3.png" alt="Imagen 3"><br><br>
+            </div>
+            <h2 class="t3">Estructura repetitiva</h2>
+            <div class="text">
+                <p>
+                    Párrafos o Rutinas. Siempre que se ejecuta un programa en COBOL, se hace de forma secuencial, empezando desde arriba hasta que encuentre la instrucción de finalizar el programa. 
+                    Las rutinas es una forma de alterar ese orden, es decir, le damos el control a un párrafo y ejecuta todas las instrucciones que haya en éste.
+                </p><br><br>
+                <img src="img/tarea_11_img_4.png" alt="Imagen 4"><br><br>
+                <img src="img/tarea_11_img_5.png" alt="Imagen 5"><br><br>
+                <p>
+                    Si observamos detenidamente, lo que hacemos es el <b>párrafo Inicio</b>, dentro de este llamamos a la <b>Rutina 2</b>, dentro de éste llamamos a la <b>Rutina 1</b> y por último desde la <b>rutina1</b> 
+                    llamamos al <b>párrafo rutina3</b>. Una vez terminado estas rutinas, el programa vuelve a su orden normal, es decir, realiza las sentencias que le faltaban del párrafo Inicio, 
+                    terminando así con la ejecución del programa. También hay que decir, que hacer párrafos estructura un poco mejor el programa y puede resultar un poco mas legible y comprensible.
+                </p>
+            </div>
+            <h2 class="t2">Simbolos del lenguaje de programación Cobol</h2>
+            <div class="text">
+                <p>"Los personajes son los más bajos en la jerarquía y que no se puede dividir más. El COBOL Juego de caracteres incluye 78 caracteres que se muestran a continuación:</p><br><br>
+                <table class="tabla_t10">
+                    <tr><td>Símbolo</td><td>Significado</td></tr>
+                    <tr><td>A-Z</td><td>Alfabetos(mayúsculas)</td></tr>
+                    <tr><td>A-z</td><td>Alfabeto (Minúsculas)</td></tr>
+                    <tr><td>0-9</td><td>Valor Numérico</td></tr>
+                    <tr><td>&nbsp</td><td>Espacio</td></tr>
+                    <tr><td>+</td><td>Signo más</td></tr>
+                    <tr><td>-</td><td>Signo menos o guión</td></tr>
+                    <tr><td>*</td><td>Asterisco</td></tr>
+                    <tr><td>/</td><td>Barra inclinada</td></tr>
+                    <tr><td>$</td><td>Símbolo de moneda</td></tr>
+                    <tr><td>,</td><td>Coma</td></tr>
+                    <tr><td>;</td><td>Punto y coma</td></tr>
+                    <tr><td>.</td><td>Punto decimal o Período</td></tr>
+                    <tr><td>"</td><td>Comillas</td></tr>
+                    <tr><td>(</td><td>Paréntesis izquierdo</td></tr>
+                    <tr><td>)</td><td>Paréntesis derecho</td></tr>
+                    <tr><td>></td><td>Mayor que</td></tr>
+                    <tr><td>&#60</td><td>Menos de</td></tr>
+                    <tr><td>:</td><td>Colon</td></tr>
+                    <tr><td>'</td><td>Apóstrofe</td></tr>
+                    <tr><td>=</td><td>Signo Igual</td></tr>
+                </table>
+            </div>
+            <h2 class="t2">Estructura del lenguaje de programación Cobol</h2>
+            <div class="text">
+                <p>
+                    La estructura general sería la siguiente...<br><br>
+                    IDENTIFICATION DIVISION <br><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPROGRAM-ID <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAUTHOR <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspINSTALLATION <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDATE-WRITTEN <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDATE-COMPILED <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSECURITY <br>
+                </p><br><br>
+                <p>
+                    ENVIRONMENT DIVISION <br><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCONFIGURATION SECTION <br><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSOURCE-COMPUTER <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOBJECT-COMPUTER <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSPECIAL-NAMES <br><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspINPUT-OUTPUT SECTION  <br><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFILE CONTROL <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspI-O-CONTROL <br>
+                </p>
+            </div>
+            <h2 class="t2">A que tipo de paradigma pertenece?</h2>
+            <div class="text"><p>El lenguaje Cobol es un ejemplo del paradigma de programación imperativo</p><br><br></div>
+            <h2 class="t2">Aplicación a descargar para editar y ejecutar</h2>
+            <p class="text">
+                Se puede descargar el compilador oficial de Cobol en el siguiente link: <a class="link" href="https://sourceforge.net/projects/gnucobol/">&nbspAqui</a>
+            </p><br><br>
+            <h2 class="t3">Ejemplo de programa</h2>
+            <h2 class="t3">Factorial de N</h2>
+            <div class="code">
+                <p>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp IDENTIFICATION DIVISION.</p>
+                <p>2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PROGRAM-ID. FACTORIAL.</p>
+                <p>3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp DATA DIVISION.</p>
+                <p>4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp WORKING-STORAGE SECTION.</p>
+                <p>5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 77 N PIC 9(4).</p>
+                <p>6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 77 A PIC S9(4) VALUE 0.</p>
+                <p>7 &nbsp&nbsp&nbsp&nbsp 77 F PIC 9(4) VALUE 1.</p>
+                <p>8 &nbsp&nbsp&nbsp&nbsp PROCEDURE DIVISION.</p>
+                <p>9 &nbsp&nbsp&nbsp&nbsp PARA.</p>
+                <p>10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp DISPLAY "ENTER A NUMBER.".</p>
+                <p>11 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ACCEPT N.</p>
+                <p>12 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PERFORM PARA1 UNTIL A = N.</p>
+                <p>13 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp DISPLAY "THE FACTORIAL IS".</p>
+                <p>14 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp DISPLAY F.</p>
+                <p>15 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp STOP RUN.</p>
+                <p>16 &nbsp&nbsp&nbsp&nbsp PARA1.</p>
+                <p>17 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ADD 1 TO A.</p>
+                <p>18 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp COMPUTE F = F * A.</p>
+            </div>
+        </div>
+    </div>
+    <div class="hp">
+        <a href="tarea_10.html" class="back">Tarea 10</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_12.html" class="next">Tarea 12</a>
+    </div>
+</body>
+</html>

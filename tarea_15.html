@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style_tareas.css">
+    <title>Tarea 15</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 15</h1>
+    </section>
+    <div class="main">
+        <div class="body">
+            <h2 class="t2_tarea_5">Ruby</h2>
+            <h2 class="t1_tarea_5">Sintaxis del lenguaje de programación Ruby</h2>
+            <div class="text">
+                <p>
+                    Vamos a escribir un simple programa de Ruby. Todas las extensiones de archivo de Ruby son.rb.Por lo tanto, el siguiente código en el archivo test.rb. <br><br>
+                    Ejemplo <br><br>
+                </p>
+                <img src="img/tarea_15_img_1.png" alt="Imagen 1"><br><br>
+                <p>Aquí, bajo el supuesto de que el directorio / usr / bin tiene Rubí intérprete disponible. Ahora, trata de ejecutar el programa de la siguiente manera:</p><br><br>
+                <img src="img/tarea_15_img_2.png" alt="Imagen 2"><br><br>
+                <p>Esto producirá los siguientes resultados:</p><br><br>
+                <img src="img/tarea_15_img_3.png" alt="Imagen 3"><br><br>
+            </div>
+            <h2 class="t3">Programa de rubí en blanco</h2>
+            <p class="text">
+                Carácter en blanco en el código Ruby, tales como espacios y tabulaciones en general se ignora, excepto cuando aparecen en la cadena si no ignorado. 
+                A veces, sin embargo, que se utilizan para interpretar declaraciones ambiguas. Cuando la opción -w está habilitada, esta interpretación generará una advertencia. <br><br>
+                <b>Ejemplo:</b><br><br> 
+            </p>
+            <img src="img/tarea_15_img_4.png" alt="Imagen 4"><br><br>
+            <h2 class="t3">Programa de rubí en el final de la línea</h2>
+            <p class="text">
+                Rubí puso un punto y coma y un salto de línea se interpreta como el final de la instrucción. Sin embargo, si el final de la línea de Ruby se reunió 
+                operadores como +, -, ni la barra invertida, que representan una continuación de un comunicado.
+            </p><br><br>
+            <h2 class="t3">Identificador de rubí</h2>
+            <p class="text">
+                Los identificadores son nombres de variables, constantes y métodos. identificadores de rubí entre mayúsculas y minúsculas. Esto significa que la RAM y la memoria RAM son dos identificadores diferentes en Ruby. <br><br>
+
+                Rubí nombre identificador puede contener letras, números y el guión bajo (_).
+            </p><br><br>
+            <h2 class="t3">Palabra reservada</h2>
+            <p class="text">La siguiente tabla muestra las palabras reservadas en Ruby. Estas palabras no pueden ser retenidos como el nombre de una constante o variable. Sin embargo, pueden ser utilizados como el nombre del método.</p><br><br>
+            <div class="text">
+                <table class="tabla_t10">
+                    <tr><td>COMIENZO</td><td>hacer</td><td>siguiente</td><td>entonces</td></tr>
+                    <tr><td>FIN</td><td>otro</td><td>nulo</td><td>verdadero</td></tr>
+                    <tr><td>alias</td><td>elsif</td><td>no</td><td>undef</td></tr>
+                    <tr><td>y</td><td>final</td><td>o</td><td>a menos que </td></tr>
+                    <tr><td>empezar</td><td>asegurar</td><td>rehacer</td><td>hasta</td></tr>
+                    <tr><td>rotura</td><td>falso</td><td>rescate</td><td>cuando</td></tr>
+                    <tr><td>caso</td><td>para</td><td>reintentar</td><td>mientras</td></tr>
+                    <tr><td>clase</td><td>si</td><td>retorno</td><td>mientras</td></tr>
+                    <tr><td>def</td><td>en</td><td>yo</td><td>__FILE__</td></tr>
+                    <tr><td>definido?</td><td>módulo</td><td>súper</td><td>__FILE__</td></tr>
+                </table>
+            </div>
+            <h2 class="t2">Simbolos del lenguaje de programación Ruby</h2>
+            <h2 class="t3">Hashes y Símbolos</h2>
+            <div class="text">
+                <p>Un símbolo parece una variable, pero está precedido de dos puntos. Ejemplos:</p><br><br>
+                <img src="img/tarea_15_img_5.png" alt="Imagen 5"><br><br>
+                <p>
+                    Los dos puntos se pueden interpretar como "la cosa llamada". Entonces :id, se interpreta como "la cosa llamada id". Los <b>símbolos</b> no contienen 
+                    valores como las variables. Un símbolo es una etiqueta, un nombre, nada más.
+                </p>
+            </div>
+            <h2 class="t3">Símbolos vs Strings</h2>
+            <div class="text">
+                <p>
+                    Un símbolo es el objeto más básico que puedes crear en Ruby: es un nombre y una ID interna. Los símbolos son útiles por que dado un símbolo, 
+                    se refiere al mismo objeto en todo el programa. Por lo tanto, son más eficientes que los strings: dos strings con el mismo nombre, son dos objetos 
+                    distintos. Esto implica un ahorra de tiempo y memoria.
+                </p><br><br>
+                <img src="img/tarea_15_img_6.png" alt="Imagen 6"><br><br>
+                <p>Cada vez que se ha usado un string, se ha creado un objeto nuevo. Por tanto, ¿cuándo usar un string, y cuándo un símbolo?</p><br><br>
+                <li>Si el contenido del objeto es lo importante, usa un string.</li><br>
+                <li>Si la identidad del objeto es importante, usa un símbolo.</li><br><br>
+                <p>
+                    Ruby usa una tabla de símbolos interna con los nombres de las variables, objetos, métodos, clases… Por ejemplo, si hay un método con el 
+                    nombre de control_movie, automáticamente se crea el símbolo :control_movie. Para ver la tabla de símbolos Symbol.all_symbols. <br><br>
+                    Como veremos a continuación, los símbolos son particularmente útiles para los hashes.
+                </p><br><br>
+            </div>
+            <h2 class="t3">Hashes</h2>
+            <div class="text">
+                <p>
+                    Hashes, también conocidos como arrays asociativos, mapas o diccionarios, son parecidos a los arrays en que son una colección indexada de 
+                    referencias a objetos. Sin embargo, mientras que en los arrays los índices son números, en los hashes se puede indexar con objetos de 
+                    cualquier tipo: strings, expresiones regulares, etc. <br><br>
+                    Cuando se almacena un valor en un array, se dan dos objetos: el índice y el valor. A posteriori se puede obtener dicho valor, gracias al índice.
+                </p><br><br>
+                <img src="img/tarea_15_img_7.png" alt="Imagen 7"><br><br>
+            </div>
+            <h2 class="t3">Los símbolos como índices</h2>
+            <div class="text">
+                <p>Por las ventajas antes citadas, se usan los símbolos como índices:</p><br><br>
+                <img src="img/tarea_15_img_8.png" alt="Imagen 8"><br><br>
+                <p>que es equivalente a:</p><br><br>
+                <img src="img/tarea_15_img_9.png" alt="Imagen 9"><br><br>
+            </div>
+            <h2 class="t2">A que tipo de paradigma pertenece?</h2>
+            <div class="text">
+                <p>El lenguaje Ruby es un ejemplo de paradigmas de programación como:</p><br><br>
+                <li>Paradigma Multiparadigma</li><br>
+                <li>Paradigma Orientada a objetos</li><br>
+                <li>Paradigma Reflexivo</li><br>
+            </div>
+            <h2 class="t2">Aplicación a descargar para editar y ejecutar</h2>
+            <p class="text">
+                Se puede descargar el compilador oficial de Ruby paraen el siguiente link: <a class="link" href="https://www.ruby-lang.org/es/downloads/">&nbspAqui</a>
+            </p><br><br>
+            <h2 class="t3">Ejemplo de programa</h2>
+            <h2 class="t3">Factorial de N</h2>
+            <div class="code">
+                <p>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_7">class</span> <span class="code_5">Integer</span></p>
+                <p>2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_7">def</span> <span class="code_5">factorial_recursive</span></p>
+                <p>3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_7">self</span> <= <span class="code_6">1</span> ? <span class="code_6">1</span> : <span class="code_7">self</span> * (<span class="code_7">self</span> - <span class="code_6">1</span>).factorial</p>
+                <p>4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_7">end</span></p>
+                <p>5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_7">def</span> <span class="code_5">factorial_iterative</span></p>
+                <p>6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp f = <span class="code_6">1</span>; <span class="code_7">for</span> i <span class="code_7">in</span> <span class="code_6">1 </span>..<span class="code_7">self</span>; f *= i; <span class="code_7">end</span>; f</p>
+                <p>4 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_7">end</span></p>
+                <p>7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_7">alias</span> <span class="code_8">:factorial :factorial_iterative</span></p>
+                <p>4 &nbsp&nbsp&nbsp&nbsp <span class="code_7">end</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="hp">
+        <a href="tarea_14.html" class="back">Tarea 14</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_16.html" class="next">Tarea 16</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style_tareas.css">
+    <title>Tarea 7</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 7</h1>
+    </section>
+    <div class="main">
+        <div class="body">
+            <h2 class="t2_tarea_5">Scheme</h2>
+            <h2 class="t1_tarea_5">Sintaxis del lenguaje de programación Scheme</h2>
+            <div class="text">
+                <p>
+                    Scheme posee una sintaxis reducida comparada a otros lenguajes. Utiliza la notación prefija. Por ejemplo, si se desea realizar la suma 1+1, 
+                    se debe programar la siguiente instrucción
+                </p><br><br>
+                <img src="img/tarea_7_img_1.png" alt="Imagen 1"><br><br>
+                <p>
+                    Los paréntesis son obligatorios, ya que separan las instrucciones que serán evaluadas por el intérprete. Para realizar comentarios dentro del código, 
+                    se utiliza el ";", así se marca que toda la línea será de comentario Ejemplo:
+                </p><br><br>
+                <img src="img/tarea_7_img_2.png" alt="Imagen 2"><br><br>
+                <h2 class="t3">Sintaxis Básica</h2>
+                <div class="text">
+                    <img src="img/tarea_7_img_3.png" alt="Imagen 3"><br><br>
+                </div>
+                <h2 class="t3">Variables locales y globales</h2>
+                <div class="text">
+                    <p>
+                        Las variables son dinámicamente tipadas. Dicho de otra forma, no se debe especificar lo que se va a guardar dentro de la misma. 
+                        Las variables globales se nombran con la instrucción (define nombre valor) Por ejemplo,
+                    </p><br><br>
+                    <img src="img/tarea_7_img_4.png" alt="Imagen 4"><br><br>
+                    <p>Por otro lado, las variables locales se definen con la instrucción ( let variables función). Por ejemplo: sumar dos números guardados en una variable local</p><br><br>
+                    <img src="img/tarea_7_img_5.png" alt="Imagen 5"><br><br>
+                </div>
+                <h2 class="t3">Creando Procedimientos Completos</h2>
+                <div class="text">
+                    <p>
+                        Utilizando la instrucción (define (nombre args) función) se crea un procedimiento dentro del programa. En mi caso, voy a implementar la 
+                        instrucción del ejemplo anterior en una función
+                    </p><br><br>
+                    <img src="img/tarea_7_img_6.png" alt="Imagen 6"><br><br>
+                    <p>De la misma manera, el procedimiento anterior pudo ser escrito de esta manera:</p><br><br>
+                    <img src="img/tarea_7_img_7.png" alt="Imagen 7"><br><br>
+                    <p>para llamar a la función creada, se utiliza la orden (función args). Así, para llamar a nuestra función de suma, se escribe:</p><br><br>
+                    <img src="img/tarea_7_img_8.png" alt="Imagen 8"><br><br>
+                </div>
+                <h2 class="t2">Simbolos del lenguaje de programación Scheme</h2>
+                <div class="text">
+                    <p>
+                        Un símbolo es lo que en otros lenguajes se denomina identificador. En Scheme los símbolos e identificadores pueden contener caracteres 
+                        internacionales (Unicode, UTF-8). El intérprete DrScheme guarda los ficheros de texto en esa codificación. <br>
+                    </p><br><br>
+                    <table class="tabla">
+                        <tr><td>'hola</td></tr>
+                        <tr><td>(symbol 'hola-que<>)</td></tr>
+                        <tr><td>(symbol->string 'hola-que<>)</td></tr>
+                        <tr><td>'mañana</td></tr>
+                        <tr><td>'lápiz ; aunque sea posible, no vamos a usar acentos en los símbolos</td></tr>
+                        <tr><td>; pero sí en los comentarios</td></tr>
+                        <tr><td>(symbol? 'hola) ; #t</td></tr>
+                        <tr><td>(symbol? "hola") ; #f</td></tr>
+                        <tr><td>(symbol?  #f) ; #f</td></tr>
+                        <tr><td>(equal? 'hola 'hola)</td></tr>
+                        <tr><td>(equal? 'hola "hola")</td></tr>
+                    </table>
+                </div>
+                <h2 class="t2">Esqueleto de Scheme</h2>
+                <h2 class="t3">Estructuras de control</h2>
+                <div class="text">
+                    <p>
+                        En Scheme existe la instrucción cond, con la cual se pueden revisar si se cumplen o no con requerimientos para realizar dicha funcion. Su sintaxis es:
+                    </p><br><br>
+                    <img src="img/tarea_7_img_9.png" alt="Imagen 9"><br><br>
+                    <p>
+                        En este caso, el else es opcional <br><br>
+                        Por ejemplo, si se desea sumar solamente numeros positivos en nuestra funcion de suma, se podría realizar la siguiente implementación
+                    </p><br><br>
+                    <img src="img/tarea_7_img_10.png" alt="Imagen 10"><br><br>
+                </div>
+                <h2 class="t2">A que tipo de paradigma pertenece?</h2>
+                <p class="text">El lenguaje Scheme tiene determinado como paradigma de programacion el 	multi-paradigma</p>
+                <h2 class="t2">Aplicación a descargar para editar y ejecutar</h2>
+                <p class="text">
+                    Para utilizar Scheme se necesita descargar el MIT/GNU el cual se puede descargar en el siguiente link: <a class="link" href="https://www.gnu.org/software/mit-scheme/">&nbspAqui</a><br><br>
+                    Y puedes utilizar un editor de codigo como: Atom, VsCode, etc...
+                </p>
+                <h2 class="t3">Ejemplo de programa</h2>
+                <h2 class="t3">Factorial de N</h2>
+                <div class="code">
+                    <p>
+                        1 &nbsp &nbsp (<span class="code_2">define </span>(factorial n) <br>
+                        2 &nbsp &nbsp &nbsp &nbsp(<span class="code_2">cond </span> ((&nbsp<&nbspn&nbsp0) &nbsp#f) <br>
+                        3 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp((<= n 1) 1) <br>
+                        4 &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp (<span class="code_2">else</span> (* n (factorial (- n 1)))))) <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hp">
+        <a href="tarea_6.html" class="back">Tarea 6</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_8.html" class="next">Tarea 8</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style_tareas.css">
+    <title>Tarea 16</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 16</h1>
+    </section>
+    <h2 class="t5">Conversion de temperatura</h2>
+    <h2 class="t4">Problema</h2>
+    <div class="main_2">
+        <div class="problem">
+            <p>Elabore un programa en JAVA que mediante un Menú de opciones permita calcular la conversión de escala de temperatura:</p><br>
+            <li class="note">De grados Centígrados a grados Farenheit</li><br>
+            <li class="note">De grados Farenheit a grados Centígrados</li><br>
+            <p>(Nota: Usar el cuadro de dialogo, showOptionDialog(), para seleccionar : °C -> °F y otro °F -> °C, )</p><br><br>
+        </div>
+    </div><br><br><br>
+    <h2 class="t2_tarea_5">Java</h2>
+    <div class="code_t16">
+            <p>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #a78cee>package tareas;</font></p>
+            <p>2</p>
+            <p>3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #a78cee>import</font> <font color = #e06c6b>javax.swing.JOptionPane;</font></p>
+            <p>4</p>
+            <p>5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #3baac3>public</font> <font color = #a78cee>class</font> <font color =#3baac3>Conversion_grados</font> {</p>
+            <p class="debug">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #50567c>Run | Debug</font></p>
+            <p>6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color = #3baac3>public static</font> <font color = #dc6ab3>void</font> <font color = #5195e2>main</font>(<font color=#dc6ab3>String</font><font color = #3baac3>[ ]</font> <font color=#d8bf7f>args</font>){</p>
+            <p>7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color= #dc6ab3>int</font> x, z;</p>
+            <p>8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color= #dc6ab3>float</font> y = <font color=#ff9070> 0</font> ;</p>
+            <p>9 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#dc6ab3>String</font><font color = #3baac3>[ ]</font> options = { <font color= #89c363>"Convertir de °C a °F"</font>, <font color= #89c363>"Convertir de °F a °C"</font> } ;</p>
+            <p>10 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#dc6ab3>String</font><font color = #3baac3>[ ]</font> option_2 = { <font color= #89c363>"Si"</font>, <font color= #89c363>"No"</font> } ;</p>
+            <p>11</p>
+            <p>12 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>do{</font></p>
+            <p>13 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp x = JOptionPane.<font color = #5195e2>showOptionDialog</font>(<font color=#cf68e1>null</font>, <font color= #89c363>"Seleccione una de las opciones"</font>, <font color= #89c363>"Conversion de grados"</font>, <font color=#ff9070> 0</font>,</p>
+            <p>14 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JOptionPane.<font color=#c2576b>YES_NO_CANCEL_OPTION</font>, <font color=#cf68e1>null</font>, options, <font color=#cf68e1>null</font>) ;</p>
+            <p>15 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>If </font>(x <font color=#cf68e1>==</font> <font color=#ff9070> 0</font>) {</p>
+            <p>16 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp y = Float.<font color = #5195e2>parseFloat</font>(JOptionPane.<font color = #5195e2>showInputDialog</font>(<font color= #89c363>"Ingrese los grados Celsius"</font>)) ;</p>
+            <p>17 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp y = (y <font color = #3baac3>*</font> <font color=#ff9070>9</font>/<font color=#ff9070>5</font>) <font color = #3baac3>+</font> <font color=#ff9070> 32</font> ;</p>
+            <p>18 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JOptionPane.<font color = #5195e2>showMessageDialog</font>(<font color=#cf68e1>null</font>, <font color= #89c363>"Grados Fahrenheit:  "</font> <font color = #3baac3>+</font> y <font color = #3baac3>+</font> <font color= #89c363>"°F"</font>) ;</p>
+            <p>19 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }<font color=#cf68e1>else</font> {</p>
+            <p>20 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font color=#cf68e1>If </font>(x <font color=#cf68e1>==</font> <font color=#ff9070> 1</font>) {</p>
+            <p>21 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp y = Float.<font color = #5195e2>parseFloat</font>(JOptionPane.<font color = #5195e2>showInputDialog</font>(<font color= #89c363>"Ingrese los grados Fahrenheit"</font>));</p>
+            <p>22 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp y = (y <font color = #3baac3>-</font> <font color=#ff9070>32</font>) <font color = #3baac3>*</font> <font color=#ff9070>5</font>/<font color=#ff9070>9</font>;</p>
+            <p>23 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JOptionPane.<font color = #5195e2>showMessageDialog</font>(<font color=#cf68e1>null</font>, <font color= #89c363>"Grados Celsius:  "</font> <font color = #3baac3>+</font> y <font color = #3baac3>+</font> <font color= #89c363>"°C"</font>) ;</p>
+            <p>24 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</p>
+            <p>25 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</p>
+            <p>26 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp z = JOptionPane.<font color = #5195e2>showOptionDialog</font>(<font color=#cf68e1>null</font>, <font color= #89c363>"Desea continuar?"</font>, <font color= #89c363>"Continuar"</font>, <font color=#ff9070> 0</font>,</p>
+            <p>27 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JOptionPane.<font color=#c2576b>YES_NO_CANCEL_OPTION</font>, <font color=#cf68e1>null</font>, option_2, <font color=#cf68e1>null</font>) ;</p>
+            <p>28 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }<font color=#cf68e1>while</font> (z <font color=#cf68e1>==</font> <font color=#ff9070> 0</font>);</p>
+            <p>29 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</p>
+            <p>30 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }</p>
+    </div>
+    <div class="hp">
+        <a href="tarea_15.html" class="back">Tarea 15</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_17.html" class="next">Tarea 17</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style_tareas.css">
+    <title>Tarea 9</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Tarea 9</h1>
+    </section>
+    <div class="main">
+        <div class="body">
+            <h2 class="t2_tarea_5">R</h2>
+            <h2 class="t1_tarea_5">Sintaxis del lenguaje de programación R</h2>
+            <div class="text">
+                <p>La sintaxis en R es muy similar a la de otros lenguajes de programación como JAVA o C. Las normas básicas que definen la sintaxis de R son: <br><br> </p>
+                <li>No se tienen en cuenta los espacios en blancos: podemos o no dejar espacios para que el código se puede ordenar de forma adecuada y poder entenderse.</li><br>
+                <li>Se distinguen las mayúsculas y minúsculas: para variables en el código, podemos crear diferentes variables con nombres iguales pero alternando mayúsculas y minúsculas.</li><br>
+                <li>Se pueden incluir comentarios: como vimos anteriormente los comentarios se utilizan para añadir información en el código.</li><br>
+                <li>
+                    No es necesario terminar cada sentencia con el carácter de punto y coma (;): en la mayoría de lenguajes de programación, 
+                    es obligatorio terminar cada sentencia con este carácter. En en cambio R podemos o no terminar de esta forma.
+                </li><br>
+                <li>Lenguaje orientado a objetos: todo en R son objetos, las variables, datos, funciones y resultados, que se generan en R son objetos estos se modifican o manipulan con operadores o funciones (que a su vez son objetos).</li><br><br>
+                <p>
+                    R se divide en cinco clases básicas o atómicas, estas son bloques de construcción o elementos que conforman a los objetos, son 5 clases principales: numérica o doble, entero, complejo, lógico y de carácter.
+                </p><br><br>
+                <img src="img/tarea_9_img_1.png" alt="Imagen 1" class="img_t9"><br><br>
+            </div>
+            <h2 class="t2">Simbolos del lenguaje de programación Haskell</h2>
+            <h2 class="t3">El editor de comandos (“prompt”)</h2>
+            <p class="text">
+                Debajo del mensaje de apertura de la consola de R se encuentra el “prompt” que es el símbolo “>” (mayor que). Las expresiones en R se escriben 
+                directamente a continuación del “prompt” en la consola de R. <br><br>
+                Si se escribe e intenta ejecutar un comando que se ha escrito en forma incompleta, el programa presenta un “+” que es el prompt de continuación. <br><br>
+                Al cerrar el programa o al teclear “q( )” nos preguntará si desea salvar los datos de esta sesión de trabajo. Puede responder: yes (si), 
+                o no (no) o cancel (cancelar) pulsando respectivamente las letras y, n o c. <br><br>
+                En cada caso respectivamente: salvará los datos antes de terminar, o terminará sin salvar, o volverá a la sesión de R. 
+                Los datos que se salvan estarán disponibles en la siguiente sesión de R. <br><br>
+                Es importante saber que el nombre de un objeto debe comenzar con una letra (A hasta Z, o, a hasta z) y puede además incluir letras, 
+                dígitos (0-9) o puntos (.). R discrimina entre letras mayúsculas y minúsculas para el nombre de un objeto, de tal manera que x y X se 
+                refiere a objetos diferentes.
+            </p><br><br>
+            <h2 class="t3">Función help (ayuda)</h2>
+            <p class="text">
+                R es un lenguaje funcional, esto es, realiza las tareas a través de funciones. La primera función que necesitamos conocer es la que nos 
+                proporciona la ayuda del programa, esta es “help”.
+            </p><br><br>
+            <img src="img/tarea_9_img_2.png" alt="Imagen 2"><br><br>
+            <h2 class="t3"> Asignaciones</h2>
+            <p class="text">
+                Al igual que ocurre con otros lenguajes de programación R asigna nombres a los diversos objetos (tales como variables o resultados de operaciones). 
+                Esto se consigue mediante el símbolo: “< –” ; “– >” ; o , “=” . <br><br>
+            </p>
+            <h2 class="t3">Paquetes</h2>
+            <p class="text">
+                Como ya se ha dicho, R consta de un sistema base de librerías y de un conjunto de paquetes adicionales que extienden su funcionalidad. <br><br>
+
+                En esta sección vamos a ver como se anexan (instalan) los paquetes adicionales. <br><br>
+                
+                Tenemos que tener en cuenta que la instalación depende del sistema operativo del computador; hay varias formas de instalar un paquete: <br><br>
+                
+                El método más sencillo consiste en es hacerlo directamente desde R, mediante la función: <br><br>
+                
+                <b>install:packages( )</b><br><br>
+                
+                Después de haber instalado la librería en el programa, para poder utilizarla debemos descargar el paquete. La forma más común de hacerlo es desde el 
+                menú Paquetes > cargar paquete …; entonces aparecerá una lista con todos las librerías instaladas y nos pedirá que instalemos una de ellas, 
+                simplemente seleccionando una la tendremos operativa. <br><br>
+            </p>
+            <img src="img/tarea_9_img_3.png" alt="Imagen 3"><br><br>
+            <h2 class="t2">A que tipo de paradigma pertenece?</h2>
+            <div class="text">
+                <p>El lenguaje R es un ejemplo de paradigmas de programación como:</p><br><br>
+                <li>Paradigma Vectorial</li><br>
+                <li>Paradigma Imperativo</li><br>
+                <li>Paradigma Funcional</li><br>
+                <li>Paradigma Procedural</li><br>
+                <li>Paradigma Orientado a obejtos</li><br>
+            </div>
+            <h2 class="t2">Aplicación a descargar para editar y ejecutar</h2>
+            <p class="text">
+                Se puede descargar el compilador oficial de R en el siguiente link: <a class="link" href="https://cran.r-project.org/bin/windows/base/">&nbspAqui</a><br><br>
+            </p>
+            <h2 class="t3">Ejemplo de programa</h2>
+            <h2 class="t3">Factorial de N</h2>
+            <div class="code">
+                <p>1 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_4"># take input from the user</span></p>
+                <p>2 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">num</span> &nbsp=&nbsp as.integer(&nbspreadline(&nbspprompt&nbsp=<span class="code_3">&nbsp"Enter a number: "</span>))</p>
+                <p>3 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">factorial</span> &nbsp = &nbsp 1</p>
+                <p>4</p>
+                <p>5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_4"># check is the number is negative, positive or zero</span></p>
+                <p>6 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="example">if&nbsp</span>(num < 0) {</span></p>
+                <p>7 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp print(<span class="code_3">"&nbspSorry, &nbspfactorial does not exist for negative numbers&nbsp"</span>)</p>
+                <p>8 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp } <span class="example">else if&nbsp</span>(num == 0) {</p>
+                <p>9 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp print(<span class="code_3">"The factorial of 0 is 1"</span>)</p>
+                <p>10 &nbsp&nbsp&nbsp&nbsp } <span class="example">else</span> {</p>
+                <p>11 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">for&nbsp</span>(i &nbspin &nbsp1:&nbsp<span class="code_2">num</span>) {</p>
+                <p>12 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="code_2">factorial</span> = <span class="code_2">factorial</span> * i</p>
+                <p>13 &nbsp&nbsp&nbsp&nbsp }</p>
+                <p>14 &nbsp&nbsp&nbsp&nbsp print(&nbsppaste(<span class="code_3">"&nbspThe factorial of&nbsp"</span>, <span class="code_2">&nbspnum</span> ,<span class="code_3">&nbsp"&nbspis&nbsp"</span>,<span class="code_2">&nbspfactorial</span>))</p>
+                <p>15 &nbsp&nbsp&nbsp&nbsp }</p>
+            </div>
+        </div>
+    </div>
+    <div class="hp">
+        <a href="tarea_8.html" class="back">Tarea 8</a>
+        <a href="menu_tareas.html" class="menu">Menu de tareas</a>
+        <a href="tarea_10.html" class="next">Tarea 10</a>
+    </div>
+</body>
+</html>
